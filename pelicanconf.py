@@ -15,8 +15,7 @@ MANGLE_EMAILS = True
 PLUGIN_PATHS = [os.path.join(THEME, 'plugins')]
 PLUGINS = ['assets']
 
-
-STATIC_PATHS = ['images', "files"]
+STATIC_PATHS = ['images', 'files']
 EXTRA_PATH_METADATA = {
     'files/favicon.ico': {'path': 'favicon.ico'},
 }
@@ -43,15 +42,19 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
+#          ('You can modify those links in your config file', '#'),)
 LINKS = ()
 
 # Social widget
 SOCIAL = (
-        ('envelope', 'mailto:richiehalford@gmail.com'),
-        ('github', 'https://github.com/richford'),
-        ('linkedin', 'https://www.linkedin.com/in/richiehalford/'),
-        ('mastodon', 'https://scholar.social/@richford'),
-        ('twitter', 'https://twitter.com/richiehalford'),
+    ('envelope', 'mailto:richiehalford@gmail.com'),
+    ('github', 'https://github.com/richford'),
+    ('linkedin', 'https://www.linkedin.com/in/richiehalford/'),
+    ('mastadon', 'https://scholar.social/@richford'),
+    ('twitter', 'https://twitter.com/richiehalford'),
 )
 
 MAIN_MENU = True
