@@ -4,12 +4,23 @@ sortorder: 2
 ---
 
 See also my [Google Scholar
-page](https://scholar.google.com/citations?hl=en&user=Jy76il8AAAAJ).
+page](https://scholar.google.com/citations?hl=en&user=Jy76il8AAAAJ)
+or my [ORCID profile](https://orcid.org/0000-0001-9276-9084).
+
+0. **A. Richie-Halford**, J. Drut, A. Bulgac (2020). Emergence
+   of a pseudogap in the BCS-BEC crossover. arXiv:2004.05014
+   [cond-mat.quant-gas]
+   [preprint](https://arxiv.org/abs/2004.05014),
+   [preprint-pdf](https://arxiv.org/pdf/2004.05014.pdf).
+
+0. **A. Richie-Halford**, J. Yeatman, N. Simon, A. Rokem (2019). Multidimensional analysis and detection of informative features in diffusion MRI measurements of human white matter. bioRxiv preprint.
+   [preprint](https://doi.org/10.1101/2019.12.19.882928)
+   [preprint-pdf](https://www.biorxiv.org/content/10.1101/2019.12.19.882928v1.full.pdf)
 
 0. **A. Richie-Halford**, A. Rokem (2018). Cloudknot: A
    Python Library to Run your Existing Code on AWS Batch.
    *Proceedings of the 17th Python in Science Conference* (SciPy
-   2018) F. Akici, D. Lippa, D. Niederhut, M. Pacer (Eds.).
+   2018) F. Akici, D. Lippa, D. Niederhut, M. Pacer (Eds.)
    [paper](http://conference.scipy.org/proceedings/scipy2018/adam_richie-halford.html),
    [software](https://richford.github.io/cloudknot/).
 

@@ -1,16 +1,12 @@
 ---
-title: About Me
+title: Hi, I'm Adam
 sortorder: 1
 url: index.html
 save_as: index.html
 ---
 
-Hi, I'm Adam.
-
-I'm a PhD candidate in the Department of Physics at the University of
-Washington. I am interested in using quantum Monte Carlo methods to
-address problems in nuclear theory. Separately, I work on developing
-machine learning techniques for the analysis of neuroimaging data.
-
-You can find out more about me using the menu above.
+I'm a postdoctoral scholar at the [University of Washington eScience
+Institute](https://escience.washington.edu/), where I develop
+statistical learning techniques and software for the analysis of
+neuroimaging data. You can find out more about me using the menu above.
 Please feel free to contact me using any of the links in the sidebar.

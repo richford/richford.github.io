@@ -3,9 +3,14 @@ title: Neuroscience
 sortorder: 3
 ---
 
+My research focuses on developing statistical techniques and software
+for the analysis of diffusion MRI (dMRI) data and is situated within the
+paradigm of [Automated Fiber Quantification](autofq.org). I am
+supervised by [A
+[Ariel Rokem](arokem.org)
+
 ### AFQ-Insight
 with:
-[Ariel Rokem](arokem.org)
 [Noah Simon](https://faculty.washington.edu/nrsimon/),
 [Jason Yeatman](http://ilabs.washington.edu/institute-faculty/bio/i-labs-jason-yeatman-phd),
 
@@ -22,6 +27,7 @@ with:
 [Ariel Rokem](arokem.org),
 Josh Smith,
 [Jason Yeatman](http://ilabs.washington.edu/institute-faculty/bio/i-labs-jason-yeatman-phd),
+Josh Smith
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra

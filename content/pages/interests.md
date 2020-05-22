@@ -1,9 +1,7 @@
 ---
-title: Outside The Lab
+title: Interests
 sortorder: 6
 ---
-
-### I love it when you call me big poppa
 
 My favorite activity is growing up all over again with my daughter, Ida.
 
@@ -12,7 +10,7 @@ My favorite activity is growing up all over again with my daughter, Ida.
   <figcaption>My daughter, Ida</figcaption>
 </figure>
 
-I'm also a (less dedicated) father to our furbaby, Mousse.
+I'm also a (less) dedicated father to our aging furbaby, Mousse.
 
 <figure>
   <img src="{filename}/images/mousse.jpg" alt="My dog, Mousse" width="300px"/>
@@ -54,12 +52,14 @@ climbing, mountaineering, and backpacking (both solo and with
 friends and family). I've volunteered from time to time with the
 Seattle-based outdoor education nonprofit [Cascase Leadership
 Challenge](http://cascadechallenge.org/), organizing group climbs
-on Mt. Hood, Mt. Baker, and Mt. St. Helens.
+on Mt. Hood, Mt. Baker, and Mt. St. Helens. If you'd like to support
+a Seattle-based youth outdoor leadership program, consider donating.
 
 ### Marine Mammal Care
 
 Once upon a time, I volunteered extensively at the [Marine Mammal Care
-Center](https://marinemammalcarecenterlosangeles.com/) in San Pedro, CA,
-where I nurtured and rehabilitated sick and injured seals and sea lions.
-Check out their site for lots of cute seal and sea lion pics and videos.
-And donate while you're there.
+Center](https://marinemammalcarecenterlosangeles.com/) in San Pedro,
+CA, where I nurtured and rehabilitated sick and injured seals and sea
+lions. It was a long time ago but it was a formative experience. Check
+out their site for lots of cute seal and sea lion pics and videos. And
+donate while you're there.
