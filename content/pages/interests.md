@@ -1,6 +1,6 @@
 ---
 title: Interests
-sortorder: 6
+sortorder: 4
 ---
 
 My favorite activity is growing up all over again with my daughter, Ida.

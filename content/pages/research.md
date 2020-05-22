@@ -1,6 +1,6 @@
 ---
 title: Research
-sortorder: 3
+sortorder: 2
 ---
 
 ### Neuroscience
@@ -38,25 +38,31 @@ focused on modeling the coexistence of superconductivity and
 magnetism in heterogeneous structures composed of superconducting and
 ferromagnetic layers.
 
-### JPL
-with
-[John Armstrong](https://scienceandtechnology.jpl.nasa.gov/people/j_armstrong)
-and
-[Richard Woo](https://www.americanscientist.org/author/richard_woo)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra
-aliquet eget sit. Faucibus a pellentesque sit amet. Libero id faucibus
-nisl tincidunt eget. Lacus laoreet non curabitur gravida. Faucibus vitae
-aliquet nec ullamcorper sit amet risus nullam. Turpis egestas integer
-eget aliquet nibh praesent tristique magna.
+I was a visiting researcher for about six months at NASA's [Jet
+Propulsion Laboratory](https://www.jpl.nasa.gov/). Under the supervision
+of [John
+Armstrong](https://scienceandtechnology.jpl.nasa.gov/people/j_armstrong),
+we demonstrated a new radio science application for spacecraft
+navigation signals.
+<!---
+Guidance engineers use the Doppler shift of these signals to
+verify spacecraft trajectory. We realized that the uplink and downlink
+irregularities — what guidance engineers would call “noise” —
+held information about the near-Sun plasma environment. We exploited
+the differing transfer functions of these irregularities to localize
+solar plasma scattering along the line-of-sight, proving a new method to
+monitor solar activity. Using Cassini spacecraft data, we demonstrated
+that this technique could determine scattering position to spatial
+scales well below that of other techniques.
+-->
 
 ### Computing
 
 Computational science is the theme uniting my work in both physics and
-neuroscience.
+neuroscience. Here are some of my research computing activities not
+captured in the domain-specific sections above:
 
-#### The Carpentries
+##### The Carpentries
 
 I volunteer as an instructor with [The
 Carpentries](https://carpentries.org/) (which comprises
@@ -71,22 +77,18 @@ you should definitely attend one of the upcoming [carpentries
 workshops](https://carpentries.org/workshops/) or contact me if you'd
 like help in requesting a workshop at your institution.
 
-### Cloudknot
-with: [Ariel Rokem](arokem.org)
+##### Cloudknot
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra
-aliquet eget sit. Faucibus a pellentesque sit amet. Libero id faucibus
-nisl tincidunt eget. Lacus laoreet non curabitur gravida. Faucibus vitae
-aliquet nec ullamcorper sit amet risus nullam. Turpis egestas integer
-eget aliquet nibh praesent tristique magna.
+With [Ariel Rokem](arokem.org), we developed a python library
+called cloudknot ([docs](https://nrdg.github.io/cloudknot/), 
+[github](https://github.com/nrdg/cloudknot)) that helps researchers run
+their existing code on [AWS Batch](https://aws.amazon.com/batch/).
 
+##### UW HPC Club
 
-### UW HPC Club
-
-As my PhD research became more and more computationally intensive,
-I helped start the [UW High Performance Computing (HPC)
-Club](http://students.washington.edu/hpcc/). I served as a founding
+As my PhD research became more and more computationally
+intensive, I helped start the [UW Research Computing
+Club](https://depts.washington.edu/uwrcc/). I served as a founding
 officer and the president of the club, which facilitates access to and
 training for UW’s shared supercomputing cluster, Hyak. The HPC Club
 manages over one million dollars in computing resources, both on Hyak
