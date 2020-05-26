@@ -76,7 +76,7 @@ publish:
 
 github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	git push git@github.com:richford.github.io.git $(GITHUB_PAGES_BRANCH):master
+	git push git@github.com:richford/richford.github.io.git $(GITHUB_PAGES_BRANCH):master
 
 
 .PHONY: html help clean regenerate serve serve-global devserver publish github
