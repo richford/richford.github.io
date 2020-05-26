@@ -75,6 +75,7 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 github: publish
+	rm -rf output/theme/js/lw-timeago/.git
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push git@github.com:richford/richford.github.io.git $(GITHUB_PAGES_BRANCH):master
 
