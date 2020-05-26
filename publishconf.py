@@ -12,7 +12,7 @@ from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://www.richiehalford.com'
-THEME = '/Users/richford/Documents/website/pelican-subtle'
+THEME = '../pelican-subtle'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'

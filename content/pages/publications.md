@@ -1,6 +1,6 @@
 ---
 title: Publications
-sortorder: 3
+sortorder: 4
 ---
 
 See also my [Google Scholar

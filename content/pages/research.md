@@ -1,19 +1,19 @@
 ---
 title: Research
-sortorder: 2
+sortorder: 3
 ---
 
 ### Neuroscience
 
 My current research interests lie at the nexus of neuroimaging and
 data science. I focus on developing statistical techniques and
-software for the analysis of diffusion MRI (dMRI) data and is situated
+software for the analysis of diffusion MRI (dMRI) data, which is situated
 within the paradigm of Automated Fiber Quantification (AFQ). See
 [autofq.org](autofq.org) for further documentation of our projects. I am
 supervised by [Ariel Rokem](arokem.org) and collaborate with
 [Noah Simon](https://faculty.washington.edu/nrsimon/),
 [Jason Yeatman](https://www.brainandeducation.com/), and
-[Anisha Keshavan](https://anisha.pizza/) among others.
+[Anisha Keshavan](https://anisha.pizza/), among others.
 
 ### Physics
 

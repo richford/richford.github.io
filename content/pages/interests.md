@@ -1,32 +1,26 @@
 ---
 title: Interests
-sortorder: 4
+sortorder: 5
 ---
 
 My favorite activity is growing up all over again with my daughter, Ida.
 
-<figure>
-  <img src="{filename}/images/ida.jpg" alt="My daughter, Ida" width="400px"/>
-  <figcaption>My daughter, Ida</figcaption>
-</figure>
+![Ida 2020]({lightbox}ida_2020.jpg "Ida 2020")
 
 I'm also a (less) dedicated father to our aging furbaby, Mousse.
 
-<figure>
-  <img src="{filename}/images/mousse.jpg" alt="My dog, Mousse" width="300px"/>
-  <figcaption>My dog, Mousse</figcaption>
-</figure>
+![Adam and Mousse]({lightbox}mousse_adam.jpg "Adam and Mousse")
 
 ### Peace Corps
 
 From 2011-2013, I served as a [U.S. Peace
 Corps](https://www.peacecorps.gov/) volunteer in the Kingdom of
-Morocco. I lived with my partner in the Berber town of Ikniouen in the
+Morocco. I lived with my partner in a Berber town in the
 Ouarzazate Province. Our projects spanned health infrastructure -- we
 built bathrooms at the local school -- and education -- we started a
 peer education program to help local high school students teach their
 peers about health and HIV/AIDS. I also worked with other volunteers to
-organize the countrys first national spelling bee competition.
+organize the country's first national English spelling bee competition.
 
 My friend, Drew, came to visit me and took beautiful photos
 while he was there. If you'd like to see photos of where we
@@ -35,17 +29,14 @@ lived, check out
 (or see his other photos of Morocco
 [here](https://drewrtw.blogspot.com/2013/01/marrakech-morocco-part-i.html),
 [here](https://drewrtw.blogspot.com/2013/01/marrakech-morocco-part-ii.html),
-[here](https://drewrtw.blogspot.com/2013/02/the-high-atlas-morocco.html)
-, and
+[here](https://drewrtw.blogspot.com/2013/02/the-high-atlas-morocco.html),
+and
 [here](https://drewrtw.blogspot.com/2013/04/the-edge-of-sahara-morocco.html)
 ).
 
 ### Outdoors
 
-<figure>
-  <img src="{filename}/images/prusik.jpg" alt="Adam climbing Prusik Peak" width="400px"/>
-  <figcaption>On top of Prusik Peak (photo courtesy of Mark Huang)</figcaption>
-</figure>
+![Adam atop Prusik Peak]({lightbox}prusik.jpg "On top of Prusik Peak (photo courtesy of Mark Huang)")
 
 I love spending time outdoors when I get a chance. I enjoy rock
 climbing, mountaineering, and backpacking (both solo and with

@@ -7,13 +7,37 @@ import os
 AUTHOR = 'Adam Richie-Halford'
 SITENAME = 'Adam\nRichie-Halford'
 SITEURL = 'http://localhost:8000'
-THEME = '/Users/richford/Documents/website/pelican-subtle'
+THEME = '../pelican-subtle'
 USER_LOGO_URL = '/images/site_logo.jpg'
 PAGE_ORDER_BY = 'sortorder'
 LOAD_CONTENT_CACHE = False
 MANGLE_EMAILS = True
-PLUGIN_PATHS = [os.path.join(THEME, 'plugins')]
-PLUGINS = ['assets']
+PLUGIN_PATHS = [
+    os.path.join(THEME, 'plugins'),
+    '../pelican-plugins/',
+]
+
+PLUGINS = ['assets', 'photos']
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {
+            'css_class': 'highlight',
+        },
+        'markdown.extensions.extra': {},
+        # optionally, more extensions,
+        # e.g. markdown.extensions.meta
+    },
+    'output_format': 'html5',
+}
+
+# Photo options
+PHOTO_LIBRARY = '/Users/richford/Documents/website/richiehalford.com/content/images/'
+PHOTO_GALLERY = (4096, 4096, 100)
+PHOTO_ARTICLE = (768, 768, 80)
+PHOTO_THUMB = (512, 512, 60)
+PHOTO_EXIF_REMOVE_GPS = True
+PHOTO_EXIF_COPYRIGHT = 'CC-BY-NC-ND'
 
 STATIC_PATHS = ['images', 'files']
 EXTRA_PATH_METADATA = {
