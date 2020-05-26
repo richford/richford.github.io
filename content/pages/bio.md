@@ -57,14 +57,13 @@ full CV, please contact me using any of the links under my picture.
 <tbody>
   <tr>
     <td class="tg-1wig">2020-</td>
-    <td class="tg-1wig">Postdoctoral Scholar</td>
+    <td class="tg-1wig">Postdoctoral<br>Scholar</td>
     <td class="tg-0lax">
       <a href="https://www.washington.edu/"
          target="_blank"
          rel="noopener noreferrer">
           University of Washington
       </a>
-      <br>
       <a href="https://escience.washington.edu/"
          target="_blank"
          rel="noopener noreferrer">
@@ -154,15 +153,9 @@ full CV, please contact me using any of the links under my picture.
   </tr>
   <tr>
     <td class="tg-1wig">2006-2010</td>
-    <td class="tg-1wig">USAF</td>
+    <td class="tg-1wig">U.S. Air Force</td>
     <td class="tg-0lax">
       Air Force Officer, Analyst, and Systems Engineer
-      <br>
-      <a href="https://www.peacecorps.gov/"
-         target="_blank"
-         rel="noopener noreferrer">
-          U.S. Air Force
-      </a>
       <br>
       <a href="https://www.losangeles.af.mil/About-Us/Fact-Sheets/Article/343702/space-and-missile-systems-center/"
          target="_blank"
