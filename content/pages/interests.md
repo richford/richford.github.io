@@ -7,7 +7,7 @@ My favorite activity is growing up all over again with my daughter, Ida.
 
 ![Ida 2020]({lightbox}ida_2020.jpg "Ida 2020")
 
-I'm also a (less) dedicated father to our aging furbaby, Mousse.
+I'm also a (slightly less) dedicated father to our furbaby, Mousse.
 
 ![Adam and Mousse]({lightbox}mousse_adam.jpg "Adam and Mousse")
 
@@ -42,15 +42,18 @@ I love spending time outdoors when I get a chance. I enjoy rock
 climbing, mountaineering, and backpacking (both solo and with
 friends and family). I've volunteered from time to time with the
 Seattle-based outdoor education nonprofit [Cascase Leadership
-Challenge](http://cascadechallenge.org/), organizing group climbs
-on Mt. Hood, Mt. Baker, and Mt. St. Helens. If you'd like to support
-a Seattle-based youth outdoor leadership program, consider donating.
+Challenge](http://cascadechallenge.org/), organizing group
+climbs on Mt. Hood, Mt. Baker, and Mt. St. Helens. [Consider
+donating](https://www.cascadechallenge.org/fundraising/donate) to
+support a Seattle-based youth outdoor leadership program, consider
+donating.
 
 ### Marine Mammal Care
 
-Once upon a time, I volunteered extensively at the [Marine Mammal Care
-Center](https://marinemammalcarecenterlosangeles.com/) in San Pedro,
-CA, where I nurtured and rehabilitated sick and injured seals and sea
-lions. It was a long time ago but it was a formative experience. Check
-out their site for lots of cute seal and sea lion pics and videos. And
-donate while you're there.
+When I lived in Los Angeles, I volunteered extensively at the [Marine
+Mammal Care Center](https://marinemammalcarecenterlosangeles.com/) in
+San Pedro, CA, where I nurtured and rehabilitated sick and injured seals
+and sea lions. It was a long time ago but it was a formative experience.
+Check out their site for lots of cute seal and sea lion pics and videos.
+And [donate](https://marinemammalcarecenterlosangeles.com/donate/) while
+you're there.

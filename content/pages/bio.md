@@ -13,7 +13,7 @@ full CV, please contact me using any of the links under my picture.
     border-color:black;
     border-style:solid;
     border-top-width:1px;
-    border-width:0px;
+    border-width:1px 0;
     font-family:Arial,sans-serif;
     font-size:14px;
     font-weight:normal;
@@ -26,7 +26,7 @@ full CV, please contact me using any of the links under my picture.
     border-color:black;
     border-style:solid;
     border-top-width:1px;
-    border-width:0px;
+    border-width:1px 0;
     font-family:Arial,sans-serif;
     font-size:14px;
     font-weight:normal;
@@ -108,7 +108,6 @@ full CV, please contact me using any of the links under my picture.
           Aurel Bulgac
       </a>
       <br>
-      Awarded the
       <a href="https://www.krellinst.org/csgf/"
          target="_blank"
          rel="noopener noreferrer">
@@ -149,6 +148,14 @@ full CV, please contact me using any of the links under my picture.
          rel="noopener noreferrer">
           Andreas Bill
       </a>
+      <br>
+      Graduate Dean's List (top 1.5% of
+      <a href="https://www.csulb.edu/college-of-natural-sciences-and-mathematics"
+         target="_blank"
+         rel="noopener noreferrer">
+          CNSM
+      </a>
+      grads)
     </td>
   </tr>
   <tr>
@@ -185,6 +192,8 @@ full CV, please contact me using any of the links under my picture.
          rel="noopener noreferrer">
           Engineering Physics
       </a>
+      <br>
+      Summa Cum Laude
     </td>
   </tr>
 </tbody>

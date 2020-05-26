@@ -80,24 +80,24 @@ like help in requesting a workshop at your institution.
 ##### Cloudknot
 
 With [Ariel Rokem](arokem.org), we developed a python library
-called cloudknot ([docs](https://nrdg.github.io/cloudknot/), 
+called Cloudknot ([docs](https://nrdg.github.io/cloudknot/), 
 [github](https://github.com/nrdg/cloudknot)) that helps researchers run
 their existing code on [AWS Batch](https://aws.amazon.com/batch/).
 
-##### UW HPC Club
+##### UW Research Computing Club
 
 As my PhD research became more and more computationally
 intensive, I helped start the [UW Research Computing
 Club](https://depts.washington.edu/uwrcc/). I served as a founding
-officer and the president of the club, which facilitates access to and
-training for UW’s shared supercomputing cluster, Hyak. The HPC Club
+officer and the president of the club, which facilitates access to
+and training for UW’s shared supercomputing cluster, Hyak. The club
 manages over one million dollars in computing resources, both on Hyak
 and in the cloud. It provides access to these resources and training
 to students to use them effectively and responsibly. To my knowledge,
 it is the only student-run club in the nation that provides access to
 supercomputing resources to all undergraduate and graduate students on
 its campus, regardless of lab affiliation. After serving as president
-of the club, I represented student interests on the [Hyak Governance
-Board](http://www.int.washington.edu/users/mjs5/HYAK/governance/),
-which advises the leadership of UW on how best to meet the HPC needs of
-researchers at UW.
+of the club, I then served on the [Hyak Governance
+Board](http://www.int.washington.edu/users/mjs5/HYAK/governance/), which
+advises the leadership of UW on how best to meet the high performance
+computing needs of UW researchers.
