@@ -41,9 +41,10 @@ PHOTO_THUMB = (512, 512, 60)
 PHOTO_EXIF_REMOVE_GPS = True
 PHOTO_EXIF_COPYRIGHT = 'CC-BY-NC-ND'
 
-STATIC_PATHS = ['images', 'files']
+STATIC_PATHS = ['images', 'files', 'extra/CNAME']
 EXTRA_PATH_METADATA = {
     'files/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 
 PATH = 'content'
