@@ -15,8 +15,11 @@ SITEURL = 'https://richford.github.io'
 THEME = '../pelican-subtle'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 DELETE_OUTPUT_DIRECTORY = True
 PAGE_ORDER_BY = 'sortorder'

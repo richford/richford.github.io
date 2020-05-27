@@ -31,6 +31,8 @@ MARKDOWN = {
     'output_format': 'html5',
 }
 
+TYPOGRIFY = True
+
 # Photo options
 PHOTO_LIBRARY = '/Users/richford/Documents/website/richiehalford.com/content/images/'
 PHOTO_GALLERY = (4096, 4096, 100)
