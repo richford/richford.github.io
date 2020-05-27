@@ -61,28 +61,20 @@ full CV, please contact me using any of the links under my picture.
     <td class="tg-0lax">
       <a href="https://www.washington.edu/"
          target="_blank"
-         rel="noopener noreferrer">
-          University of Washington
-      </a>
+         rel="noopener noreferrer">University of Washington</a>
       <a href="https://escience.washington.edu/"
          target="_blank"
-         rel="noopener noreferrer">
-          eScience Institute
-      </a>
+         rel="noopener noreferrer">eScience Institute</a>
       <br>
       Advisor:
       <a href="https://arokem.org"
          target="_blank"
-         rel="noopener noreferrer">
-          Ariel Rokem
-      </a>
+         rel="noopener noreferrer">Ariel Rokem</a>
       <br>
       Data Science and Neuroimaging. See
       <a href="https://autofq.org"
          target="_blank"
-         rel="noopener noreferrer">
-          autofq.org
-      </a>
+         rel="noopener noreferrer">autofq.org</a>
     </td>
   </tr>
   <tr>
@@ -91,28 +83,20 @@ full CV, please contact me using any of the links under my picture.
     <td class="tg-0lax">
       <a href="https://phys.washington.edu/"
          target="_blank"
-         rel="noopener noreferrer">
-          University of Washington
-      </a>
+         rel="noopener noreferrer">University of Washington</a>
       <br>
       <a href="https://phys.washington.edu/research/research-groups/nuclear-theory-group"
          target="_blank"
-         rel="noopener noreferrer">
-          Nuclear Physics
-      </a>
+         rel="noopener noreferrer">Nuclear Physics</a>
       <br>
       Advisor: 
       <a href="https://faculty.washington.edu/bulgac/"
          target="_blank"
-         rel="noopener noreferrer">
-          Aurel Bulgac
-      </a>
+         rel="noopener noreferrer">Aurel Bulgac</a>
       <br>
       <a href="https://www.krellinst.org/csgf/"
          target="_blank"
-         rel="noopener noreferrer">
-          Computational Science Graduate Fellowship
-      </a>
+         rel="noopener noreferrer">Computational Science Graduate Fellowship</a>
     </td>
   </tr>
   <tr>
@@ -123,9 +107,7 @@ full CV, please contact me using any of the links under my picture.
       <br>
       <a href="https://www.peacecorps.gov/"
          target="_blank"
-         rel="noopener noreferrer">
-          U.S. Peace Corps
-      </a>
+         rel="noopener noreferrer">U.S. Peace Corps</a>
       <br>
       Kingdom of Morocco
     </td>
@@ -136,25 +118,19 @@ full CV, please contact me using any of the links under my picture.
     <td class="tg-tf2e">
       <a href="https://www.csulb.edu/physics-astronomy"
          target="_blank"
-         rel="noopener noreferrer">
-          California State University
-      </a>
+         rel="noopener noreferrer">California State University</a>
       <br>
       Condensed Matter Physics
       <br>
       Advisor:
       <a href="http://web.csulb.edu/~abill/"
          target="_blank"
-         rel="noopener noreferrer">
-          Andreas Bill
-      </a>
+         rel="noopener noreferrer">Andreas Bill</a>
       <br>
       Graduate Dean's List (top 1.5% of
       <a href="https://www.csulb.edu/college-of-natural-sciences-and-mathematics"
          target="_blank"
-         rel="noopener noreferrer">
-          CNSM
-      </a>
+         rel="noopener noreferrer">CNSM</a>
       grads)
     </td>
   </tr>
@@ -166,15 +142,11 @@ full CV, please contact me using any of the links under my picture.
       <br>
       <a href="https://www.losangeles.af.mil/About-Us/Fact-Sheets/Article/343702/space-and-missile-systems-center/"
          target="_blank"
-         rel="noopener noreferrer">
-          Space and Missile Systems Center
-      </a>
+         rel="noopener noreferrer">Space and Missile Systems Center</a>
       <br>
       <a href="https://www.losangeles.af.mil/"
          target="_blank"
-         rel="noopener noreferrer">
-          Los Angeles Air Force Base, CA
-      </a>
+         rel="noopener noreferrer">Los Angeles Air Force Base, CA</a>
     </td>
   </tr>
   <tr>
@@ -183,15 +155,11 @@ full CV, please contact me using any of the links under my picture.
     <td class="tg-0lax">
       <a href="https://daytonabeach.erau.edu/college-arts-sciences/physical-sciences"
          target="_blank"
-         rel="noopener noreferrer">
-          Embry-Riddle Aeronautical University
-      </a>
+         rel="noopener noreferrer">Embry-Riddle Aeronautical University</a>
       <br>
       <a href="https://erau.edu/degrees/bachelor/engineering-physics"
          target="_blank"
-         rel="noopener noreferrer">
-          Engineering Physics
-      </a>
+         rel="noopener noreferrer">Engineering Physics</a>
       <br>
       Summa Cum Laude
     </td>
