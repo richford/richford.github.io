@@ -45,6 +45,7 @@ STATIC_PATHS = ['images', 'files', 'extra/CNAME']
 EXTRA_PATH_METADATA = {
     'files/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/cloudknot.html': {'path': 'cloudknot.html'},
 }
 
 PATH = 'content'
