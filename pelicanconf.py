@@ -41,11 +41,12 @@ PHOTO_THUMB = (512, 512, 60)
 PHOTO_EXIF_REMOVE_GPS = True
 PHOTO_EXIF_COPYRIGHT = 'CC-BY-NC-ND'
 
-STATIC_PATHS = ['images', 'files', 'extra/CNAME']
+READERS = {'html': None}
+STATIC_PATHS = ['images', 'files', 'extra/CNAME', 'extra/cloudknot.html']
 EXTRA_PATH_METADATA = {
     'files/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/.htaccess': {'path': '.htaccess'},
+    'extra/cloudknot.html': {'path': 'cloudknot.html'},
 }
 
 PATH = 'content'

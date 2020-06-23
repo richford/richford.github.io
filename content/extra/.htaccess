@@ -1,2 +1,0 @@
-# Redirects richiehalford.org/cloudknot to https://nrdg.github.io/cloudknot/
-RewriteRule ^cloudknot/(.*)$ https://nrdg.github.io/cloudknot/$1 [R=301,NC,L]
