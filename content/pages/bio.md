@@ -57,7 +57,7 @@ full CV, please contact me using any of the links under my picture.
 <tbody>
   <tr>
     <td class="tg-1wig">2020-</td>
-    <td class="tg-1wig">Postdoctoral<br>Scholar</td>
+    <td class="tg-1wig">Data Science<br>Postdoctoral<br>Fellow</td>
     <td class="tg-0lax">
       <a href="https://www.washington.edu/"
          target="_blank"
