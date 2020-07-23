@@ -5,7 +5,7 @@ url: index.html
 save_as: index.html
 ---
 
-I'm a postdoctoral scholar at the 
+I'm a postdoctoral fellow at the 
 <a href="https://escience.washington.edu/"
    target="_blank"
    rel="noopener noreferrer">University of Washington eScience Institute</a>,

@@ -82,8 +82,6 @@ SOCIAL = (
     ('envelope', 'mailto:richiehalford@gmail.com'),
     ('github', 'https://github.com/richford'),
     ('linkedin', 'https://www.linkedin.com/in/richiehalford/'),
-    ('mastadon', 'https://scholar.social/@richford'),
-    ('twitter', 'https://twitter.com/richiehalford'),
 )
 
 MAIN_MENU = True
