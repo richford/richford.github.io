@@ -6,3 +6,4 @@ develop_server.sh
 **__pycache__
 **.DS_Store
 tasks.py
+content/images/ida/*
