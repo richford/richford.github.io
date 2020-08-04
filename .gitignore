@@ -1,0 +1,7 @@
+**.sw?
+pelican.pid
+srv.pid
+output
+develop_server.sh
+**__pycache__
+**.DS_Store
