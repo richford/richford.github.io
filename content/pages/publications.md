@@ -12,14 +12,14 @@ See also my
    rel="noopener noreferrer">ORCID profile</a>.
 
 0. **A. Richie-Halford**, J. Drut, A. Bulgac (2020). Emergence
-   of a pseudogap in the BCS-BEC crossover. arXiv:2004.05014
-   [cond-mat.quant-gas]
+   of a pseudogap in the BCS-BEC crossover. Phys. Rev. Lett, 125,
+   060403.
+   <a href="https://doi.org/10.1103/PhysRevLett.125.060403"
+      target="_blank"
+      rel="noopener noreferrer">article</a>,
    <a href="https://arxiv.org/abs/2004.05014"
       target="_blank"
-      rel="noopener noreferrer">preprint</a>,
-   <a href="https://arxiv.org/pdf/2004.05014.pdf"
-      target="_blank"
-      rel="noopener noreferrer">preprint-pdf</a>.
+      rel="noopener noreferrer">preprint</a>.
 
 0. **A. Richie-Halford**, J. Yeatman, N. Simon, A. Rokem (2019).
    Multidimensional analysis and detection of informative features in
