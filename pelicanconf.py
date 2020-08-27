@@ -82,6 +82,7 @@ SOCIAL = (
     ('envelope', 'mailto:richiehalford@gmail.com'),
     ('github', 'https://github.com/richford'),
     ('linkedin', 'https://www.linkedin.com/in/richiehalford/'),
+    ('calendar', 'https://www.calendly.com/richford'),
 )
 
 MAIN_MENU = True
