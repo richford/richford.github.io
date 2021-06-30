@@ -1,8 +1,7 @@
-* * *
-
+---
 title: Publications
-
-## sortorder: 4
+sortorder: 4
+---
 
 See also my 
 <a href="https://scholar.google.com/citations?hl=en&user=Jy76il8AAAAJ"
@@ -52,12 +51,13 @@ See also my
 
 3.  **A. Richie-Halford**, J. Drut, A. Bulgac (2020). Emergence
     of a pseudogap in the BCS-BEC crossover. Phys. Rev. Lett, 125,
-    60403.  <a href="https://doi.org/10.1103/PhysRevLett.125.060403"
-               target="_blank"
-               rel="noopener noreferrer">article</a>,
-            <a href="https://arxiv.org/abs/2004.05014"
-               target="_blank"
-               rel="noopener noreferrer">preprint</a>.
+    60403.
+    <a href="https://doi.org/10.1103/PhysRevLett.125.060403"
+       target="_blank"
+       rel="noopener noreferrer">article</a>,
+    <a href="https://arxiv.org/abs/2004.05014"
+       target="_blank"
+       rel="noopener noreferrer">preprint</a>.
 
 4.  **A. Richie-Halford**, A. Rokem (2018). Cloudknot: A
     Python Library to Run your Existing Code on AWS Batch.
