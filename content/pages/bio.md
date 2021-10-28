@@ -3,8 +3,10 @@ title: Bio
 sortorder: 2
 ---
 
-Here's a condensed, reverse chronological, professional biography. For a
-full CV, please contact me using any of the links under my picture.
+Here's a condensed, reverse chronological, professional biography. You can also
+<a href="https://github.com/richford/cv/raw/main/cv.pdf"
+   target="_blank"
+   rel="noopener noreferrer">download my full (hopefully current) CV</a>.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

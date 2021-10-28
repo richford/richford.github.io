@@ -3,13 +3,11 @@ title: Interests
 sortorder: 5
 ---
 
-My favorite activity is growing up all over again with my daughter, Ida.
+My favorite activity is growing up all over again with my kids, Ida and Arlo.
 
-![Ida 2020]({lightbox}ida_2020.jpg "Ida 2020")
-
-I'm also a (slightly less) dedicated father to our furbaby, Mousse.
-
-![Adam and Mousse]({lightbox}mousse_adam.jpg "Adam and Mousse")
+![Ida and me 2021]({lightbox}ida_adam_2021.jpg "Ida and me 2021")
+![Arlo 2021]({lightbox}arlo_2021.jpg "Arlo 2021")
+![Ida and Arlo 2021]({lightbox}ida_arlo_2021.jpg "Ida and Arlo 2021")
 
 ### Peace Corps
 
