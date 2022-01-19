@@ -3,7 +3,7 @@ title: Research
 sortorder: 3
 ---
 
-### Neuroscience
+### Neuroscience, Education, and Data Science
 
 My current research interests lie at the nexus of neuroimaging and
 data science. I focus on developing statistical techniques and
@@ -12,21 +12,18 @@ within the paradigm of Automated Fiber Quantification (AFQ). See
 <a href="autofq.org"
    target="_blank"
    rel="noopener noreferrer">autofq.org</a>
-for further documentation of our projects. I am
-supervised by 
-<a href="arokem.org"
-   target="_blank"
-   rel="noopener noreferrer">Ariel Rokem</a>
-and collaborate with
-<a href="https://faculty.washington.edu/nrsimon/"
-   target="_blank"
-   rel="noopener noreferrer">Noah Simon</a>,
+for further documentation of our projects. I also develop browser based tools
+for the deep phenotyping of dyslexia. I am supervised by
 <a href="https://www.brainandeducation.com/"
    target="_blank"
-   rel="noopener noreferrer">Jason Yeatman</a>, and
-<a href="https://anisha.pizza/"
+   rel="noopener noreferrer">Jason Yeatman</a>,
+and collaborate with
+<a href="arokem.org"
    target="_blank"
-   rel="noopener noreferrer">Anisha Keshavan</a>, among others.
+   rel="noopener noreferrer">Ariel Rokem</a> and
+<a href="https://faculty.washington.edu/nrsimon/"
+   target="_blank"
+   rel="noopener noreferrer">Noah Simon</a>, among many others.
 
 ### Physics
 
