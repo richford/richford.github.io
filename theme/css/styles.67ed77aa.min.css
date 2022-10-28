@@ -1,0 +1,564 @@
+@charset "UTF-8"; 
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000338}}
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #202020;
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI",
+        "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 1rem;
+    min-width: 300px; }
+
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000348}}
+    a {
+      color: #000000;
+      text-decoration: none; }
+
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000353}}
+      a[href]:not(.nohover):hover {
+        color: #0e94ec; }
+
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000359}}
+  hr {
+    background-color: #c2c2c2;
+    height: 1px;
+    border: none; }
+
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000365}}
+    img {
+      max-width: 100%; }
+
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000369}}
+      aside div#user_meta {
+        padding: 40px 20px 40px 20px;
+        text-align: center; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000372}}
+        aside div#user_meta img#logo {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: 5px solid #000000;
+          background-color: #000000;
+          box-shadow: 0px 0px 1px #000000; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000381}}
+          aside div#user_meta h2 {
+            margin: 15px 0 5px 0; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000385}}
+            aside div#user_meta p {
+              margin: 0px;
+              font-size: 0.9rem; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000390}}
+              aside div#user_meta i {
+                width: 30px;
+                text-align: center;
+                vertical-align: middle; }
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000396}}
+                aside div#user_meta div.social {
+                  margin-top: 15px; }
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\0000398}}
+                  aside div#user_meta div.social a {
+                    display: inline-block;
+                    height: 30px; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003105}}
+        aside div#user_meta ul {
+          margin: 0px;
+          padding-left: 0px;
+          list-style-type: none; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003109}}
+          aside div#user_meta ul li {
+            line-height: 2em; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003111}}
+            aside div#user_meta ul li a i {
+              padding-left: 5px; }
+
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003125}}
+  main {
+    position: relative;
+    width: 100%;
+    margin: auto; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003129}}
+    main header {
+      padding: 0px 40px 0px 40px;
+      border-top: #c2c2c2 1px solid;
+      border-bottom: #c2c2c2 1px solid;
+      text-align: center;
+      color: #5f5f5f; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003135}}
+      main header p {
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003141}}
+        main header p#header {
+          color: #000000; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003145}}
+          main header p:not(#header) a {
+            color: #5f5f5f; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003146}}
+            main header p:not(#header) a:hover {
+              color: #0e94ec; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003156}}
+    main article {
+      padding: 10px 40px 10px 40px;
+      max-width: 640px;
+      margin: auto; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003163}}
+      main article div.article_text {
+        line-height: 1.375em; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003164}}
+        main article div.article_text a {
+          text-decoration: underline; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003174}}
+          main article div.article_text code {
+            color: black;
+            font-size: 1rem;
+            font-family: monospace;
+            padding: 1px 3px;
+            background: #eeeeee; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003180}}
+            main article div.article_text pre {
+              color: black;
+              font-size: 1rem;
+              font-family: monospace;
+              line-height: 1.25;
+              margin-bottom: 0px;
+              margin-top: 0px;
+              padding-top: 5px;
+              padding-bottom: 10px; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003189}}
+              main article div.article_text div.highlight {
+                overflow: auto;
+                background: #f6f6f6; }
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003194}}
+                main article div.article_text div.highlight pre {
+                  display: inline-block;
+                  padding-left: 10px;
+                  border: 1px solid #c7c7c7;
+                  border-left: 3px solid #0e94ec; }
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003194}}
+                  main article div.article_text div.highlight pre code {
+                    padding: 0px;
+                    background: #f6f6f6; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003207}}
+        main article div.article_text table.highlighttable {
+          table-layout: fixed;
+          width: 100%;
+          border: 1px solid #c7c7c7;
+          border-collapse: collapse; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003212}}
+          main article div.article_text table.highlighttable pre {
+            border: none; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003216}}
+            main article div.article_text table.highlighttable td {
+              padding: 0px; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003220}}
+              main article div.article_text table.highlighttable td.linenos {
+                width: 30px;
+                overflow: hidden;
+                text-align: right;
+                border-left: 3px solid #0e94ec;
+                border-right: 1px solid #c7c7c7;
+                background: #dddddd;
+                vertical-align: top; }
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003228}}
+                main article div.article_text table.highlighttable td.linenos div.linenodiv pre {
+                  padding-right: 4px;
+                  float: right; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003237}}
+        main article div.article_text div.admonition {
+          border-width: 1px 1px 1px 7px;
+          border-radius: 10px;
+          border-style: solid;
+          border-color: #c7c7c7;
+          border-left-color: #202020;
+          background-color: #f6f6f6; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003244}}
+          main article div.article_text div.admonition.update,
+          main article div.article_text div.admonition.hint,
+          main article div.article_text div.admonition.important,
+          main article div.article_text div.admonition.note,
+          main article div.article_text div.admonition.tip {
+            border-left-color: #0e94ec; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003248}}
+            main article div.article_text div.admonition.warning,
+            main article div.article_text div.admonition.attention,
+            main article div.article_text div.admonition.caution,
+            main article div.article_text div.admonition.danger {
+              border-left-color: red; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003252}}
+              main article div.article_text div.admonition p {
+                margin: 0px;
+                padding: 10px 15px; }
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003257}}
+                main article div.article_text div.admonition p.admonition-title {
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  padding: 5px 15px;
+                  border-bottom: 1px solid #c7c7c7; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003267}}
+        main article div.article_text blockquote {
+          margin: 22px 2px 22px 2px;
+          padding-left: 40px;
+          color: #5f5f5f;
+          font-style: italic; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003276}}
+      main article div.article_meta {
+        font-size: 0.8rem;
+        color: #5f5f5f; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003281}}
+        main article div#article_comments {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003284}}
+          main article div#article_comments i {
+            padding-right: 10px; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003292}}
+    main footer {
+      border-top: #c2c2c2 1px solid;
+      padding: 30px 40px 30px 40px; }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003295}}
+      main footer div#paginator {
+        font-weight: bold;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        overflow: auto;
+        text-align: center; }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003301}}
+        main footer div#paginator div {
+          display: inline-block; }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003305}}
+          main footer div#paginator span {
+            width: 60px; }
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003309}}
+            main footer div#paginator span#left {
+              float: left;
+              text-align: left; }
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003314}}
+              main footer div#paginator span#right {
+                float: right;
+                text-align: right; }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003323}}
+    main div#ending_message {
+      border-top: #c2c2c2 1px solid;
+      padding: 0 40px 0 40px;
+      color: #5f5f5f;
+      font-size: 0.7rem; }
+
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003332}}
+  @media screen and (min-width: 957px) {
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003332}}
+    aside {
+      width: 25%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;   }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003338}}
+      aside h2 {
+        margin: 10px 0 0 0;   }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003342}}
+        aside div#user_meta {
+          max-width: 192px;
+          text-align: right;
+          margin: 0 20px 0 auto;   }
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003350}}
+    main {
+      position: absolute;
+      top: 0;
+      left: 25%;
+      width: 75%;
+      margin-left: -1px;
+      border-left: #c2c2c2 1px solid;
+      overflow-x: hidden;
+      overflow-y: hidden;   }
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003359}}
+      main header {
+        padding: 10px 40px 10px 40px;
+        border-top: 0;
+        text-align: left;   }
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003365}}
+        main article {
+          width: 640px;
+          margin: 0;   }
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/style\.scss}line{font-family:\00003370}}
+          main footer div#paginator {
+            width: 640px;   }
+}
+
+@charset "UTF-8"; 
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\000035}}
+  .hll {
+    background-color: #ffd800;
+    display: block; }
+
+    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\000036}}
+    .w {
+      color: #bbbbbb; }
+
+      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\000038}}
+      .err {
+        color: #a61717;
+        background-color: #e3d2d2; }
+
+        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000312}}
+        .k {
+          font-weight: bold; }
+
+          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000313}}
+          .kc {
+            font-weight: bold; }
+
+            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000314}}
+            .kd {
+              font-weight: bold; }
+
+              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000315}}
+              .kn {
+                font-weight: bold; }
+
+                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000316}}
+                .kp {
+                  font-weight: bold; }
+
+                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000317}}
+                  .kr {
+                    font-weight: bold; }
+
+                    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000318}}
+                    .kt {
+                      color: #445588;
+                      font-weight: bold; }
+
+                      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000321}}
+                      .n {
+                        color: #333333; }
+
+                        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000322}}
+                        .na {
+                          color: teal; }
+
+                          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000323}}
+                          .nb {
+                            color: #0086b3; }
+
+                            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000324}}
+                            .bp {
+                              color: #1d3e81; }
+
+                              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000325}}
+                              .nc {
+                                color: #445588;
+                                font-weight: bold; }
+
+                                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000326}}
+                                .no {
+                                  color: teal; }
+
+                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000327}}
+                                  .nd {
+                                    color: #3c5d5d;
+                                    font-weight: bold; }
+
+                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000328}}
+                                    .ni {
+                                      color: purple; }
+
+                                      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000329}}
+                                      .ne {
+                                        color: #990000;
+                                        font-weight: bold; }
+
+                                        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000330}}
+                                        .nf {
+                                          color: #990000;
+                                          font-weight: bold; }
+
+                                          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000332}}
+                                          .nl {
+                                            color: #990000;
+                                            font-weight: bold; }
+
+                                            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000333}}
+                                            .nn {
+                                              color: #555555; }
+
+                                              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000335}}
+                                              .nt {
+                                                color: navy; }
+
+                                                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000336}}
+                                                .nv {
+                                                  color: teal; }
+
+                                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000337}}
+                                                  .vc {
+                                                    color: teal; }
+
+                                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000338}}
+                                                    .vg {
+                                                      color: teal; }
+
+                                                      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000339}}
+                                                      .vi {
+                                                        color: teal; }
+
+                                                        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000346}}
+                                                        .s {
+                                                          color: #dd1144; }
+
+                                                          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000347}}
+                                                          .sb {
+                                                            color: #dd1144; }
+
+                                                            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000348}}
+                                                            .sc {
+                                                              color: #dd1144; }
+
+                                                              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000349}}
+                                                              .sd {
+                                                                color: #dd1144; }
+
+                                                                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000350}}
+                                                                .s2 {
+                                                                  color: #dd1144; }
+
+                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000351}}
+                                                                  .se {
+                                                                    color: #dd1144; }
+
+                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000352}}
+                                                                    .sh {
+                                                                      color: #dd1144; }
+
+                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000353}}
+                                                                      .si {
+                                                                        color: #dd1144; }
+
+                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000354}}
+                                                                        .sx {
+                                                                          color: #dd1144; }
+
+                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000355}}
+                                                                          .sr {
+                                                                            color: #009926; }
+
+                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000356}}
+                                                                            .s1 {
+                                                                              color: #dd1144; }
+
+                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000357}}
+                                                                              .ss {
+                                                                                color: #990073; }
+
+                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000360}}
+                                                                                .m {
+                                                                                  color: #009999; }
+
+                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000362}}
+                                                                                  .mf {
+                                                                                    color: #009999; }
+
+                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000363}}
+                                                                                    .mh {
+                                                                                      color: #009999; }
+
+                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000364}}
+                                                                                      .mi {
+                                                                                        color: #009999; }
+
+                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000365}}
+                                                                                        .il {
+                                                                                          color: #009999; }
+
+                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000366}}
+                                                                                          .mo {
+                                                                                            color: #009999; }
+
+                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000369}}
+                                                                                            .o {
+                                                                                              font-weight: bold; }
+
+                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000370}}
+                                                                                              .ow {
+                                                                                                font-weight: bold; }
+
+                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000375}}
+                                                                                                .c {
+                                                                                                  color: #999988;
+                                                                                                  font-style: italic; }
+
+                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000376}}
+                                                                                                  .cm {
+                                                                                                    color: #999988;
+                                                                                                    font-style: italic; }
+
+                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000377}}
+                                                                                                    .cp {
+                                                                                                      color: #999999;
+                                                                                                      font-weight: bold;
+                                                                                                      font-style: italic; }
+
+                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000378}}
+                                                                                                      .c1 {
+                                                                                                        color: #999988;
+                                                                                                        font-style: italic; }
+
+                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000379}}
+                                                                                                        .cs {
+                                                                                                          color: #999999;
+                                                                                                          font-weight: bold;
+                                                                                                          font-style: italic; }
+
+                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000383}}
+                                                                                                          .gd {
+                                                                                                            color: #000000;
+                                                                                                            background-color: #ffdddd; }
+
+                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000384}}
+                                                                                                            .gd .x {
+                                                                                                              color: #000000;
+                                                                                                              background-color: #ffaaaa; }
+
+                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000385}}
+                                                                                                              .ge {
+                                                                                                                font-style: italic; }
+
+                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000386}}
+                                                                                                                .gr {
+                                                                                                                  color: #aa0000; }
+
+                                                                                                                  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000387}}
+                                                                                                                  .gh {
+                                                                                                                    color: #999999; }
+
+                                                                                                                    @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000388}}
+                                                                                                                    .gi {
+                                                                                                                      color: #000000;
+                                                                                                                      background-color: #ddffdd; }
+
+                                                                                                                      @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000389}}
+                                                                                                                      .gi .x {
+                                                                                                                        color: #000000;
+                                                                                                                        background-color: #aaffaa; }
+
+                                                                                                                        @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000390}}
+                                                                                                                        .go {
+                                                                                                                          color: #888888; }
+
+                                                                                                                          @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000391}}
+                                                                                                                          .gp {
+                                                                                                                            color: #555555; }
+
+                                                                                                                            @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000392}}
+                                                                                                                            .gs {
+                                                                                                                              font-weight: bold; }
+
+                                                                                                                              @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000393}}
+                                                                                                                              .gu {
+                                                                                                                                color: #800080;
+                                                                                                                                font-weight: bold; }
+
+                                                                                                                                @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/richford\/Documents\/website\/pelican-subtle\/static\/css\/pygments\.css}line{font-family:\0000394}}
+                                                                                                                                .gt {
+                                                                                                                                  color: #aa0000; }
