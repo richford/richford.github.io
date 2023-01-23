@@ -5,7 +5,7 @@ url: index.html
 save_as: index.html
 ---
 
-I'm a postdoctoral scholar in
+I'm a research scientist in
 <a href="https://dbpeds.stanford.edu/"
    target="_blank"
    rel="noopener noreferrer">Developmental-Behavioral Pediatrics at Stanford University</a>.

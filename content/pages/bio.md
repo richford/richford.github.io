@@ -58,7 +58,29 @@ Here's a condensed, reverse chronological, professional biography. You can also
 <table class="tg">
 <tbody>
   <tr>
-    <td class="tg-1wig">2022</td>
+    <td class="tg-1wig">2023</td>
+    <td class="tg-1wig">Research<br>Scientist</td>
+    <td class="tg-0lax">
+      <a href="https://www.stanford.edu/"
+         target="_blank"
+         rel="noopener noreferrer">Stanford University</a>
+      <a href="https://dbpeds.stanford.edu/"
+         target="_blank"
+         rel="noopener noreferrer">Developmental-Behavioral Pediatrics</a>
+      <br>
+      Supervisor:
+      <a href="https://ed.stanford.edu/faculty/jyeatman"
+         target="_blank"
+         rel="noopener noreferrer">Jason Yeatman</a>
+      <br>
+      Data Science, Neuroimaging, and Educational Technology. See
+      <a href="https://www.brainandeducation.com/"
+         target="_blank"
+         rel="noopener noreferrer">autofq.org</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">2022-2023</td>
     <td class="tg-1wig">Postdoctoral<br>Scholar</td>
     <td class="tg-0lax">
       <a href="https://www.stanford.edu/"
