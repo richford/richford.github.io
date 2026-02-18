@@ -24,19 +24,72 @@ import ProjectCard from "../components/ProjectCard.astro";
     </div>
 
     <div class="grid gap-6">
-      <ProjectCard
-        title="ROAR — Rapid Online Assessment of Reading"
-        description="A web-based platform for administering reading assessments to students at scale, supporting both research and school-based deployment."
-        role="Director of Technology & Innovation. Built the engineering team and led architecture, frontend, backend, and data pipeline development."
-        impact="Deployed across schools and research labs nationwide, enabling large-scale studies of reading development."
-        links={[
-          { label: "Website", href: "https://roar.stanford.edu/" },
-        ]}
-        tags={["EdTech", "Web Platform", "Data Pipelines", "Leadership"]}
-      />
+      <div class="group relative rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-slate-700 hover:bg-slate-900 transition-all duration-300">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-lg font-semibold text-slate-100 group-hover:text-accent transition-colors">
+            ROAR: Rapid Online Assessment of Reading
+          </h3>
+
+          <div class="grid sm:grid-cols-2 gap-6 text-sm">
+            <div>
+              <h4 class="font-medium text-slate-200 mb-2">The Problem</h4>
+              <p class="text-slate-400">
+                Schools and researchers need reliable, scalable reading assessments that work across
+                diverse devices, networks, and student populations, with strict privacy requirements
+                and measurement validity constraints.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-medium text-slate-200 mb-2">What I Own</h4>
+              <p class="text-slate-400">
+                Team of six engineers (and growing), technical roadmap, full-stack architecture,
+                data pipeline design, production reliability, and cross-functional coordination
+                with researchers, educators, and school districts.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-medium text-slate-200 mb-2">Technical Choices</h4>
+              <ul class="text-slate-400 space-y-1">
+                <li>▸ Web-based assessment delivery (browser-native, no installs)</li>
+                <li>▸ Real-time data pipelines for research analytics</li>
+                <li>▸ FERPA-compliant student data handling</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-medium text-slate-200 mb-2">Scale</h4>
+              <ul class="text-slate-400 space-y-1">
+                <li>▸ 309 districts, 2,708 schools rostered</li>
+                <li>▸ 160,000+ users who have completed assessments</li>
+                <li>▸ 873,000+ assessment runs</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">EdTech</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Web Platform</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Data Pipelines</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Leadership</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">FERPA</span>
+          </div>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a
+              href="https://roar.stanford.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1"
+            >
+              Website
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <ProjectCard
-        title="pyAFQ — Automated Fiber Quantification"
+        title="pyAFQ: Automated Fiber Quantification"
         description="Open-source Python pipeline for automated tractography and white-matter analysis of diffusion MRI data."
         role="Core developer. Designed the analysis pipeline, implemented statistical methods, and built quality-controlled data resources."
         impact="Published in Nature Methods and Scientific Data. Used by neuroimaging labs worldwide."
@@ -62,7 +115,7 @@ import ProjectCard from "../components/ProjectCard.astro";
       />
 
       <ProjectCard
-        title="Groupyr — Sparse Group Lasso"
+        title="Groupyr: Sparse Group Lasso"
         description="A scikit-learn-compatible Python library implementing the sparse group lasso for high-dimensional supervised learning with grouped features."
         role="Lead developer. Designed the API, implemented optimization algorithms, and published in JOSS."
         impact="Published in Journal of Open Source Software. Used for feature selection in neuroimaging studies (PLOS Computational Biology)."
@@ -101,9 +154,7 @@ import ProjectCard from "../components/ProjectCard.astro";
         >Google Scholar</a>
         or in my
         <a
-          href="https://github.com/richford/cv/raw/main/cv.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/cv.pdf"
           class="text-accent hover:text-accent-light transition-colors"
         >CV</a>.
       </p>

@@ -30,16 +30,20 @@ import TimelineItem from "../components/TimelineItem.astro";
           I'm a research and engineering leader at
           <a href="https://ed.stanford.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">Stanford University</a>,
           where I lead technical development of
-          <a href="https://roar.stanford.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">ROAR</a>
-          — a web-based reading assessment platform used by researchers and schools at scale.
-          I built and manage the engineering team, the assessment delivery infrastructure,
-          and the data/analytics pipelines that power the research.
+          <a href="https://roar.stanford.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">ROAR</a>,
+          a scientifically validated reading assessment platform used by real schools and districts
+          across the country. What makes ROAR distinctive is the research-practice partnership at
+          its core: every assessment is grounded in peer-reviewed science, and every deployment
+          solves real problems in real classrooms. I built and manage the engineering team,
+          the assessment delivery infrastructure, and the data/analytics pipelines that power the research.
         </p>
         <p>
           Before Stanford, I was a data science postdoc at the
           <a href="https://escience.washington.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">UW eScience Institute</a>,
-          where I built open-source tools for reproducible neuroimaging analysis —
-          including pyAFQ (published in Nature Methods) and Cloudknot (serverless batch computing on AWS).
+          where I built open-source tools for reproducible neuroimaging analysis,
+          including pyAFQ (published in Nature Methods), Cloudknot (serverless batch computing on AWS),
+          Groupyr (sparse group lasso, published in JOSS), and AFQ-Insight (interpretable ML for
+          tractometry, published in PLOS Computational Biology).
         </p>
         <p>
           My PhD is in computational nuclear physics from the University of Washington,
@@ -64,6 +68,36 @@ import TimelineItem from "../components/TimelineItem.astro";
           in reproducible, transparent research.
         </p>
       </div>
+
+      <div class="mt-12 pt-10 border-t border-slate-800/50">
+        <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6">What I Own</h2>
+        <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm text-slate-300">
+          <li class="flex items-start gap-2">
+            <span class="text-accent mt-0.5">▸</span>
+            Build and lead a team of six engineers (and growing)
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-accent mt-0.5">▸</span>
+            End-to-end architecture: web platform, APIs, data pipelines
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-accent mt-0.5">▸</span>
+            Production ops: monitoring, incident response, reliability
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-accent mt-0.5">▸</span>
+            Privacy &amp; compliance (FERPA, student PII)
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-accent mt-0.5">▸</span>
+            Cross-functional with researchers, educators, and school districts
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-accent mt-0.5">▸</span>
+            Technical roadmap, hiring, and vendor evaluation
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -80,7 +114,7 @@ import TimelineItem from "../components/TimelineItem.astro";
         <TimelineItem
           year="2022–2023"
           title="Research Scientist"
-          org="Stanford University — Developmental-Behavioral Pediatrics"
+          org="Stanford University — ROAR / Developmental-Behavioral Pediatrics"
           detail="Data science, neuroimaging, and educational technology."
         />
         <TimelineItem
@@ -126,9 +160,7 @@ import TimelineItem from "../components/TimelineItem.astro";
     <div class="max-w-5xl mx-auto px-6 text-center">
       <p class="text-slate-400 mb-6">Want the full details?</p>
       <a
-        href="https://github.com/richford/cv/raw/main/cv.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/cv.pdf"
         class="inline-flex items-center px-6 py-3 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-slate-100 font-medium text-sm transition-colors gap-2"
       >
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
