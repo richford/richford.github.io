@@ -6,10 +6,25 @@ import TimelineItem from "../components/TimelineItem.astro";
 <Layout title="About — Adam Richie-Halford" description="Background and experience of Adam Richie-Halford, technology leader at Stanford University.">
   <section class="max-w-5xl mx-auto px-6 py-24 sm:py-32">
     <div class="max-w-3xl">
-      <p class="text-sm font-mono text-accent mb-4 tracking-wide">About</p>
-      <h1 class="text-3xl sm:text-4xl font-bold text-slate-50 mb-8">
-        Builder, scientist, leader.
-      </h1>
+      <div class="flex items-center gap-6 mb-8">
+        <picture>
+          <source srcset="/images/headshot.webp" type="image/webp" />
+          <img
+            src="/images/headshot.jpg"
+            alt="Adam Richie-Halford"
+            width="80"
+            height="80"
+            loading="eager"
+            class="w-20 h-20 rounded-full object-cover ring-2 ring-slate-800 ring-offset-2 ring-offset-slate-950 flex-shrink-0 scale-110" style="object-position: 30% 20%;"
+          />
+        </picture>
+        <div>
+          <p class="text-sm font-mono text-accent mb-1 tracking-wide">About</p>
+          <h1 class="text-3xl sm:text-4xl font-bold text-slate-50">
+            Builder, scientist, leader.
+          </h1>
+        </div>
+      </div>
       <div class="space-y-5 text-slate-300 leading-relaxed">
         <p>
           I'm a research and engineering leader at
