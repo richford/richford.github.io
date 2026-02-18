@@ -5,15 +5,6 @@ url: index.html
 save_as: index.html
 ---
 
-I'm a research scientist in
-<a href="https://dbpeds.stanford.edu/"
-   target="_blank"
-   rel="noopener noreferrer">Developmental-Behavioral Pediatrics at Stanford University</a>.
-and an affiliate at the 
-<a href="https://escience.washington.edu/"
-   target="_blank"
-   rel="noopener noreferrer">University of Washington eScience Institute</a>.
-I develop statistical learning techniques and software for the analysis of
-neuroimaging data. I also develop web-based assessments for the deep phenotyping
-of dyslexia. You can find out more about me using the menu above. Please feel
-free to contact me using any of the links under my picture.
+I'm the Director of Technology and Innovation for the [Rapid Online Assessment of Reading (ROAR)](https://roar.stanford.edu/) in the [Graduate School of Education at Stanford University](https://ed.stanford.edu/). There, I lead the technical development of web-based reading assessments and the data/analytics pipelines that support research at scale. My work sits at the intersection of educational technology, statistical learning, and neuroimaging, building tools that are rigorous enough for science and practical enough for real-world deployment. I also contribute to open-source scientific software for reproducible analysis.
+
+You can find out more about me using the menu above. Please feel free to contact me using any of the links under my picture.

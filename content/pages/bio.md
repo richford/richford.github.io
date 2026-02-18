@@ -3,6 +3,10 @@ title: Bio
 sortorder: 2
 ---
 
+I'm a research and engineering leader working at the intersection of educational assessment, statistical learning, and neuroimaging. At Stanford, I lead technical development for web-based reading assessments and the infrastructure that supports large-scale, high-quality research. I'm especially interested in building measurement systems that are scientifically grounded, scalable, and usable in real-world settings.
+
+I also build and maintain open-source tools for reproducible data analysis and scientific computing.
+
 Here's a condensed, reverse chronological, professional biography. You can also
 <a href="https://github.com/richford/cv/raw/main/cv.pdf"
    target="_blank"
