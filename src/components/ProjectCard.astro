@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  role: string;
+  impact: string;
+  links: { label: string; href: string }[];
+  tags: string[];
+}
+
+const { title, description, role, impact, links, tags } = Astro.props;
+---
+
+<div class="group relative rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-slate-700 hover:bg-slate-900 transition-all duration-300">
+  <div class="flex flex-col gap-3">
+    <h3 class="text-lg font-semibold text-slate-100 group-hover:text-accent transition-colors">
+      {title}
+    </h3>
+    <p class="text-sm text-slate-400">{description}</p>
+    <p class="text-sm text-slate-300">
+      <span class="font-medium text-slate-200">Role:</span> {role}
+    </p>
+    <p class="text-sm text-slate-300">
+      <span class="font-medium text-slate-200">Impact:</span> {impact}
+    </p>
+    <div class="flex flex-wrap gap-2 pt-1">
+      {tags.map((tag) => (
+        <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+          {tag}
+        </span>
+      ))}
+    </div>
+    <div class="flex flex-wrap gap-4 pt-2">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1"
+        >
+          {link.label}
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </a>
+      ))}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Adam Richie-Halford">
+  <section class="max-w-5xl mx-auto px-6 py-24 sm:py-32">
+    <div class="max-w-3xl">
+      <p class="text-sm font-mono text-accent mb-4 tracking-wide">Hi, I'm</p>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-50 leading-tight mb-6">
+        Adam Richie-Halford
+      </h1>
+      <p class="text-xl sm:text-2xl text-slate-300 leading-relaxed mb-8">
+        I build scalable technical systems at the intersection of science and product.
+      </p>
+      <p class="text-base text-slate-400 leading-relaxed mb-12 max-w-2xl">
+        Director of Technology &amp; Innovation at Stanford, where I lead
+        development of web-based assessments and data pipelines used by
+        researchers and schools nationwide. Previously: computational physicist,
+        open-source maintainer, Peace Corps volunteer, Air Force officer.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="/projects"
+          class="inline-flex items-center px-6 py-3 rounded-lg bg-accent hover:bg-accent-dark text-white font-medium text-sm transition-colors"
+        >
+          View my work
+        </a>
+        <a
+          href="/about"
+          class="inline-flex items-center px-6 py-3 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-slate-100 font-medium text-sm transition-colors"
+        >
+          About me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-slate-800/50 py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-12">What I've built</h2>
+      <div class="grid sm:grid-cols-3 gap-8">
+        <div>
+          <p class="text-3xl font-bold text-slate-50 mb-2">ROAR</p>
+          <p class="text-sm text-slate-400">
+            Led technical development of a web-based reading assessment platform
+            deployed across schools and research labs at scale.
+          </p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-slate-50 mb-2">Open Source</p>
+          <p class="text-sm text-slate-400">
+            Core contributor to pyAFQ, Cloudknot, and Groupyr &mdash;
+            scientific tools published in Nature Methods, SciPy, and JOSS.
+          </p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-slate-50 mb-2">Data Pipelines</p>
+          <p class="text-sm text-slate-400">
+            Architected analytics infrastructure supporting large-scale
+            neuroimaging and educational research at Stanford and UW.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-slate-800/50 py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-sm text-slate-400 mb-6">Previously at</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-slate-500">
+        <span class="text-lg font-semibold">Stanford University</span>
+        <span class="text-lg font-semibold">University of Washington</span>
+        <span class="text-lg font-semibold">U.S. Air Force</span>
+        <span class="text-lg font-semibold">U.S. Peace Corps</span>
+        <span class="text-lg font-semibold">NASA JPL</span>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,163 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<Layout title="Projects — Adam Richie-Halford" description="Selected projects and open-source work by Adam Richie-Halford.">
+  <section class="max-w-5xl mx-auto px-6 py-24 sm:py-32">
+    <div class="max-w-3xl mb-16">
+      <p class="text-sm font-mono text-accent mb-4 tracking-wide">Projects</p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-50 mb-6">
+        Things I've built and shipped.
+      </h1>
+      <p class="text-base text-slate-400 leading-relaxed">
+        A selection of technical projects spanning educational technology,
+        scientific computing, and open-source infrastructure. For a full
+        publication list, see my
+        <a
+          href="https://scholar.google.com/citations?hl=en&user=Jy76il8AAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-accent hover:text-accent-light transition-colors"
+        >Google Scholar</a> profile.
+      </p>
+    </div>
+
+    <div class="grid gap-6">
+      <ProjectCard
+        title="ROAR — Rapid Online Assessment of Reading"
+        description="A web-based platform for administering reading assessments to students at scale, supporting both research and school-based deployment."
+        role="Director of Technology & Innovation. Built the engineering team and led architecture, frontend, backend, and data pipeline development."
+        impact="Deployed across schools and research labs nationwide, enabling large-scale studies of reading development."
+        links={[
+          { label: "Website", href: "https://roar.stanford.edu/" },
+        ]}
+        tags={["EdTech", "Web Platform", "Data Pipelines", "Leadership"]}
+      />
+
+      <ProjectCard
+        title="pyAFQ — Automated Fiber Quantification"
+        description="Open-source Python pipeline for automated tractography and white-matter analysis of diffusion MRI data."
+        role="Core developer. Designed the analysis pipeline, implemented statistical methods, and built quality-controlled data resources."
+        impact="Published in Nature Methods and Scientific Data. Used by neuroimaging labs worldwide."
+        links={[
+          { label: "Documentation", href: "https://yeatmanlab.github.io/pyAFQ/" },
+          { label: "GitHub", href: "https://github.com/yeatmanlab/pyAFQ" },
+          { label: "Nature Methods", href: "https://doi.org/10.1038/s41592-021-01185-5" },
+        ]}
+        tags={["Python", "Neuroimaging", "Open Source", "Data Science"]}
+      />
+
+      <ProjectCard
+        title="Cloudknot"
+        description="A Python library that lets researchers run existing code on AWS Batch with minimal configuration. Eliminates the boilerplate of containerization, IAM setup, and job queue management."
+        role="Creator and maintainer. Designed the API, implemented AWS integrations, and published at SciPy 2018."
+        impact="Enabled researchers without cloud expertise to scale computations to hundreds of parallel jobs."
+        links={[
+          { label: "Documentation", href: "https://nrdg.github.io/cloudknot/" },
+          { label: "GitHub", href: "https://github.com/nrdg/cloudknot" },
+          { label: "SciPy Paper", href: "http://conference.scipy.org/proceedings/scipy2018/adam_richie-halford.html" },
+        ]}
+        tags={["Python", "AWS", "Cloud Computing", "Open Source"]}
+      />
+
+      <ProjectCard
+        title="Groupyr — Sparse Group Lasso"
+        description="A scikit-learn-compatible Python library implementing the sparse group lasso for high-dimensional supervised learning with grouped features."
+        role="Lead developer. Designed the API, implemented optimization algorithms, and published in JOSS."
+        impact="Published in Journal of Open Source Software. Used for feature selection in neuroimaging studies (PLOS Computational Biology)."
+        links={[
+          { label: "GitHub", href: "https://github.com/richford/groupyr" },
+          { label: "JOSS", href: "https://doi.org/10.21105/joss.03024" },
+          { label: "PLOS CompBio", href: "https://doi.org/10.1371/journal.pcbi.1009136" },
+        ]}
+        tags={["Python", "Machine Learning", "Statistics", "Open Source"]}
+      />
+
+      <ProjectCard
+        title="AFQ-Browser"
+        description="A browser-based tool for interactive visualization and analysis of diffusion MRI tractometry data."
+        role="Core developer. Built interactive web visualizations for white-matter tract profiles."
+        impact="Published in Nature Communications. Enabled collaborative, reproducible analysis of neuroimaging data."
+        links={[
+          { label: "GitHub", href: "https://github.com/yeatmanlab/AFQ-Browser" },
+          { label: "Nature Comms", href: "https://www.nature.com/articles/s41467-018-03297-7" },
+        ]}
+        tags={["JavaScript", "Visualization", "Neuroimaging", "Open Source"]}
+      />
+    </div>
+  </section>
+
+  <section class="border-t border-slate-800/50 py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-8">Selected Publications</h2>
+      <p class="text-sm text-slate-400 mb-8">
+        Full list on
+        <a
+          href="https://scholar.google.com/citations?hl=en&user=Jy76il8AAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-accent hover:text-accent-light transition-colors"
+        >Google Scholar</a>
+        or in my
+        <a
+          href="https://github.com/richford/cv/raw/main/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-accent hover:text-accent-light transition-colors"
+        >CV</a>.
+      </p>
+      <ul class="space-y-4 text-sm text-slate-300">
+        <li>
+          <span class="text-slate-400">2022</span> &middot;
+          <strong class="text-slate-200">Richie-Halford A</strong>, Cieslak M, Ai L, et al.
+          An analysis-ready and quality controlled resource for pediatric brain white-matter research.
+          <em>Scientific Data</em>.
+          <a href="https://doi.org/10.1038/s41597-022-01695-7" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light">doi</a>
+        </li>
+        <li>
+          <span class="text-slate-400">2021</span> &middot;
+          Kruper J, Yeatman JD, <strong class="text-slate-200">Richie-Halford A</strong>, et al.
+          Evaluating the reliability of human brain white matter tractometry.
+          <em>Aperture Neuro</em>.
+          <a href="https://doi.org/10.1101/2021.02.24.432740" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light">doi</a>
+        </li>
+        <li>
+          <span class="text-slate-400">2021</span> &middot;
+          <strong class="text-slate-200">Richie-Halford A</strong>, Yeatman J, Simon N, Rokem A.
+          Multidimensional analysis and detection of informative features in human brain white matter.
+          <em>PLOS Computational Biology</em>.
+          <a href="https://doi.org/10.1371/journal.pcbi.1009136" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light">doi</a>
+        </li>
+        <li>
+          <span class="text-slate-400">2021</span> &middot;
+          Cieslak M, et al. (incl. <strong class="text-slate-200">Richie-Halford A</strong>).
+          QSIPrep: an integrative platform for preprocessing and reconstructing diffusion MRI data.
+          <em>Nature Methods</em>.
+          <a href="https://doi.org/10.1038/s41592-021-01185-5" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light">doi</a>
+        </li>
+        <li>
+          <span class="text-slate-400">2020</span> &middot;
+          <strong class="text-slate-200">Richie-Halford A</strong>, Drut J, Bulgac A.
+          Emergence of a pseudogap in the BCS-BEC crossover.
+          <em>Physical Review Letters</em>.
+          <a href="https://doi.org/10.1103/PhysRevLett.125.060403" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light">doi</a>
+        </li>
+        <li>
+          <span class="text-slate-400">2018</span> &middot;
+          <strong class="text-slate-200">Richie-Halford A</strong>, Rokem A.
+          Cloudknot: A Python Library to Run your Existing Code on AWS Batch.
+          <em>SciPy 2018</em>.
+          <a href="http://conference.scipy.org/proceedings/scipy2018/adam_richie-halford.html" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light">paper</a>
+        </li>
+        <li>
+          <span class="text-slate-400">2018</span> &middot;
+          Yeatman JD, <strong class="text-slate-200">Richie-Halford A</strong>, Smith JK, Keshavan A, Rokem A.
+          A browser-based tool for visualization and analysis of diffusion MRI data.
+          <em>Nature Communications</em>.
+          <a href="https://www.nature.com/articles/s41467-018-03297-7" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light">doi</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</Layout>

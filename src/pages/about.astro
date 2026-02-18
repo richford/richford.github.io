@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TimelineItem from "../components/TimelineItem.astro";
+---
+
+<Layout title="About — Adam Richie-Halford" description="Background and experience of Adam Richie-Halford, technology leader at Stanford University.">
+  <section class="max-w-5xl mx-auto px-6 py-24 sm:py-32">
+    <div class="max-w-3xl">
+      <p class="text-sm font-mono text-accent mb-4 tracking-wide">About</p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-50 mb-8">
+        Builder, scientist, leader.
+      </h1>
+      <div class="space-y-5 text-slate-300 leading-relaxed">
+        <p>
+          I'm a research and engineering leader at
+          <a href="https://ed.stanford.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">Stanford University</a>,
+          where I lead technical development of
+          <a href="https://roar.stanford.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">ROAR</a>
+          — a web-based reading assessment platform used by researchers and schools at scale.
+          I built and manage the engineering team, the assessment delivery infrastructure,
+          and the data/analytics pipelines that power the research.
+        </p>
+        <p>
+          Before Stanford, I was a data science postdoc at the
+          <a href="https://escience.washington.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">UW eScience Institute</a>,
+          where I built open-source tools for reproducible neuroimaging analysis —
+          including pyAFQ (published in Nature Methods) and Cloudknot (serverless batch computing on AWS).
+        </p>
+        <p>
+          My PhD is in computational nuclear physics from the University of Washington,
+          where I developed high-performance Monte Carlo simulations on DOE supercomputers
+          as a
+          <a href="https://www.krellinst.org/csgf/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">Computational Science Graduate Fellow</a>.
+          The work resulted in a Physical Review Letters publication and gave me deep
+          expertise in statistical methods, large-scale computing, and building software
+          that has to be correct.
+        </p>
+        <p>
+          Before grad school, I served as a
+          <a href="https://www.peacecorps.gov/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">U.S. Peace Corps</a>
+          health education volunteer in Morocco, where I led community health infrastructure projects
+          and co-organized the country's first national English spelling bee.
+          Before that, I was an Air Force officer and systems engineer at the
+          <a href="https://www.losangeles.af.mil/About-Us/Fact-Sheets/Article/343702/space-and-missile-systems-center/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">Space and Missile Systems Center</a>.
+        </p>
+        <p>
+          I care about building things that are rigorous enough for science and practical enough
+          for real-world deployment. I contribute to open-source scientific software and believe
+          in reproducible, transparent research.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-slate-800/50 py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-12">Timeline</h2>
+      <div class="max-w-2xl">
+        <TimelineItem
+          year="2023–present"
+          title="Director of Technology & Innovation"
+          org="Stanford University — ROAR / Graduate School of Education"
+          detail="Leading technical development of web-based reading assessments and data infrastructure."
+        />
+        <TimelineItem
+          year="2022–2023"
+          title="Research Scientist"
+          org="Stanford University — Developmental-Behavioral Pediatrics"
+          detail="Data science, neuroimaging, and educational technology."
+        />
+        <TimelineItem
+          year="2020–2022"
+          title="Data Science Postdoctoral Fellow"
+          org="University of Washington — eScience Institute"
+          detail="Built open-source tools for reproducible neuroimaging analysis."
+        />
+        <TimelineItem
+          year="2014–2020"
+          title="PhD, Nuclear Physics"
+          org="University of Washington"
+          detail="Computational Science Graduate Fellowship. Quantum Monte Carlo simulations on DOE supercomputers."
+        />
+        <TimelineItem
+          year="2011–2013"
+          title="Peace Corps Volunteer"
+          org="U.S. Peace Corps — Kingdom of Morocco"
+          detail="Health education, community infrastructure, and peer education programs."
+        />
+        <TimelineItem
+          year="2006–2010"
+          title="Air Force Officer & Systems Engineer"
+          org="U.S. Air Force — Space and Missile Systems Center"
+        />
+        <TimelineItem
+          year="2010"
+          title="MS, Condensed Matter Physics"
+          org="California State University, Long Beach"
+          detail="Graduate Dean's List (top 1.5%)."
+        />
+        <TimelineItem
+          year="2006"
+          title="BS, Engineering Physics"
+          org="Embry-Riddle Aeronautical University"
+          detail="Summa Cum Laude."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-slate-800/50 py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-slate-400 mb-6">Want the full details?</p>
+      <a
+        href="https://github.com/richford/cv/raw/main/cv.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-6 py-3 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-slate-100 font-medium text-sm transition-colors gap-2"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+        </svg>
+        Download CV
+      </a>
+    </div>
+  </section>
+</Layout>
