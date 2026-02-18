@@ -33,6 +33,12 @@ jobs:
       - name: Build Astro site
         run: npm run build
 
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Generate CV PDF
+        run: node scripts/generate-pdf.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

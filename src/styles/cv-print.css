@@ -1,0 +1,150 @@
+@media print {
+  /* ── Page setup ── */
+  @page {
+    size: letter;
+    margin: 0.5in 0.6in;
+  }
+
+  /* ── Base text ── */
+  html, body {
+    background: white !important;
+    color: black !important;
+    font-size: 9.5pt !important;
+    line-height: 1.35 !important;
+  }
+
+  /* ── Hide site header and footer ──
+     The site header is body > header (contains nav).
+     The CV header is article > header (.cv-header) — keep that. */
+  body > header {
+    display: none !important;
+  }
+  body > footer {
+    display: none !important;
+  }
+  .print\\:hidden {
+    display: none !important;
+  }
+
+  /* ── Fix flex layout that breaks Chromium pagination ──
+     body is "flex flex-col" and main is "flex-1" — these must be block. */
+  body {
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+  main {
+    display: block !important;
+    flex: none !important;
+    padding: 0 !important;
+    padding-top: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+  }
+  .cv-page {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+  }
+
+  /* Force overflow visible on the entire CV content tree.
+     Without this, Chromium clips content at page boundaries. */
+  article,
+  section,
+  .cv-page,
+  .cv-page * {
+    overflow: visible !important;
+  }
+
+  /* ── CV header ── */
+  .cv-header {
+    margin-bottom: 0.75rem !important;
+  }
+  .cv-header h1 {
+    font-size: 16pt !important;
+    margin-bottom: 2pt !important;
+  }
+  .cv-header p {
+    margin-bottom: 2pt !important;
+  }
+
+  /* ── Entry layout ──
+     CSS Grid clips content at page breaks in Chromium.
+     Switch to block + padding-left with absolute-positioned date labels. */
+  .cv-entry,
+  .cv-pub {
+    display: block !important;
+    margin-bottom: 0.35rem !important;
+    padding-left: 7.5rem !important;
+    position: relative !important;
+  }
+  .cv-entry > span:first-child,
+  .cv-pub > span:first-child {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 7rem !important;
+    text-align: right !important;
+  }
+  .cv-entry > div,
+  .cv-pub > div {
+    display: block !important;
+  }
+
+  /* ── Section spacing ── */
+  .cv-section {
+    margin-bottom: 0.6rem !important;
+  }
+  .cv-section-heading {
+    border-bottom-color: #ccc !important;
+    margin-bottom: 0.4rem !important;
+    padding-bottom: 2pt !important;
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+  .cv-section h3 {
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.2rem !important;
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  /* Tighten Tailwind space-y utilities */
+  .cv-section .space-y-6 > * + * {
+    margin-top: 0.35rem !important;
+  }
+  .cv-section .space-y-4 > * + * {
+    margin-top: 0.25rem !important;
+  }
+  .cv-section .space-y-3 > * + * {
+    margin-top: 0.2rem !important;
+  }
+  .cv-section ol {
+    margin-top: 0 !important;
+  }
+  .cv-section ol li {
+    margin-bottom: 0.1rem !important;
+  }
+
+  /* ── Links ── */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  a[href^="https://doi.org"] {
+    color: #1a56db !important;
+  }
+
+  /* ── Strip decorations ── */
+  * {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}
