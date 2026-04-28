@@ -118,7 +118,7 @@ export const cv = {
       title: "Systems Engineer",
       org: "United States Air Force, Los Angeles Air Force Base, El Segundo, CA",
       bullets: [
-        "Led team of 21 to form tech investment plan linking $2.4B lab budget to $12B satellite R&D portfolio.",
+        "Project lead for the technology investment plan linking a $2.4B lab budget to a $12B satellite R&D portfolio; aligned a 21-person cross-functional group of contractors, civilians, and Air Force officers around shared priorities.",
         "Technical experience in spacelift, precision navigation & timing, remote sensing systems.",
       ],
     },

@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ResumeCvToggle from "../components/ResumeCvToggle.astro";
 import { cv } from "../data/cv";
 import "../styles/cv-print.css";
 
@@ -12,7 +13,11 @@ function highlightName(authors: string): string {
 ---
 
 <Layout title="CV — Adam Richie-Halford" description="Curriculum vitae of Adam Richie-Halford.">
-  <article class="cv-page max-w-4xl mx-auto px-6 py-16 sm:py-24">
+  <article class="cv-page max-w-4xl mx-auto px-6 py-16 sm:py-20">
+
+    {/* Same toggle bar shown on the resume page — so the two views feel like
+        sibling tabs of one document, not separate pages. */}
+    <ResumeCvToggle active="cv" printButtonId="print-btn" />
 
     <!-- Header -->
     <header class="cv-header mb-12">
@@ -39,18 +44,6 @@ function highlightName(authors: string): string {
           <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z" /></svg>
           {cv.contact.linkedin.replace("https://www.", "")}
         </a>
-      </div>
-      <div class="mt-6 print:hidden">
-        <button
-          id="print-btn"
-          type="button"
-          class="inline-flex items-center px-4 py-2 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-slate-100 text-sm transition-colors gap-2 cursor-pointer"
-        >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m0 0a48.09 48.09 0 0 1 10.5 0m-10.5 0V5.625c0-.621.504-1.125 1.125-1.125h8.25c.621 0 1.125.504 1.125 1.125v2.034" />
-          </svg>
-          Print / Save PDF
-        </button>
       </div>
     </header>
 

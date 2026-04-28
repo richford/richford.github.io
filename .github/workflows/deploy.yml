@@ -39,6 +39,9 @@ jobs:
       - name: Generate CV PDF
         run: node scripts/generate-pdf.mjs
 
+      - name: Generate tailored resume PDFs
+        run: node scripts/generate-resumes.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

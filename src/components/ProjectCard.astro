@@ -16,11 +16,11 @@ const { title, description, role, impact, links, tags } = Astro.props;
     <h3 class="text-lg font-semibold text-slate-100 group-hover:text-accent transition-colors">
       {title}
     </h3>
-    <p class="text-sm text-slate-400">{description}</p>
-    <p class="text-sm text-slate-300">
+    <p class="text-base text-slate-300 leading-relaxed">{description}</p>
+    <p class="text-base text-slate-300 leading-relaxed">
       <span class="font-medium text-slate-200">Role:</span> {role}
     </p>
-    <p class="text-sm text-slate-300">
+    <p class="text-base text-slate-300 leading-relaxed">
       <span class="font-medium text-slate-200">Impact:</span> {impact}
     </p>
     <div class="flex flex-wrap gap-2 pt-1">

@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "pdf": "node scripts/generate-pdf.mjs",
+    "resumes": "node scripts/generate-resumes.mjs",
+    "build:all": "astro build && npm run pdf && npm run resumes"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",

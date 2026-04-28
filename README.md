@@ -1,43 +1,76 @@
-# Astro Starter Kit: Minimal
+# richiehalford.org
 
-```sh
-npm create astro@latest -- --template minimal
+Personal site, long-form CV, and tailored resumes — all built from one repo.
+
+Stack: [Astro](https://astro.build/) + Tailwind v4 + a Playwright-driven build
+step that renders each tailored resume to a PDF.
+
+## Site map
+
+```
+/                              landing
+/about                          about + how-i-work
+/projects                       project cards (ROAR, pyAFQ, Cloudknot, …)
+/cv                             long-form academic CV (web view + print)
+/resume/<slug>                  tailored, ATS-friendly resume (web view)
+/resumes/<basename>.pdf         the printed PDF, generated at build time
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Project structure
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+src/
+├── components/                ProjectCard, TimelineItem
+├── data/
+│   ├── cv.ts                  master CV record (long-form, academic-style)
+│   └── resumes/
+│       ├── types.ts           Resume type + factory contract
+│       ├── step-up.ts         2-page Step Up Tutoring tailored variant
+│       ├── step-up-1pg.ts     1-page compressed variant (derives from step-up)
+│       └── index.ts           registry consumed by /resume/[slug]
+├── layouts/Layout.astro       site chrome (nav, footer)
+├── pages/
+│   ├── index.astro            hero
+│   ├── about.astro            about + how-i-work
+│   ├── projects.astro         project cards
+│   ├── cv.astro               long-form CV
+│   └── resume/[slug].astro    dynamic resume renderer
+└── styles/
+    ├── global.css
+    ├── cv-print.css           print rules for /cv
+    └── resume-print.css       print rules for /resume/<slug>
+scripts/
+├── generate-pdf.mjs           builds dist/cv.pdf (long-form)
+└── generate-resumes.mjs       builds dist/resumes/<basename>.pdf for each variant
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Adding a new tailored resume
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Create `src/data/resumes/<slug>.ts` exporting a `Resume` (see `step-up.ts` for shape).
+2. Register it in `src/data/resumes/index.ts`.
+3. Add the slug + pdfBasename pair to `loadResumes()` in `scripts/generate-resumes.mjs`.
+4. `npm run build && npm run resumes`. The PDF lands in `dist/resumes/<basename>.pdf` and the
+   page is at `/resume/<slug>`.
 
-Any static assets, like images, can be placed in the `public/` directory.
+ATS guidance baked into the system: single-column, system fonts, real text (no images
+of text), real `<h1>`/`<h2>`/`<h3>`, no headers/footers in the printable area.
 
-## 🧞 Commands
+## Commands
 
-All commands are run from the root of the project, from a terminal:
+| Command              | What it does                                                     |
+| :------------------- | :--------------------------------------------------------------- |
+| `npm run dev`        | Local dev server on `localhost:4321`                             |
+| `npm run build`      | Static build to `./dist/`                                        |
+| `npm run preview`    | Preview the built site                                           |
+| `npm run pdf`        | Render `/cv` to `dist/cv.pdf`                                    |
+| `npm run resumes`    | Render each tailored resume to `dist/resumes/<basename>.pdf`     |
+| `npm run build:all`  | `build` + `pdf` + `resumes` — what your deploy pipeline should run |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+`npm run resumes` requires `npm run build` to have completed first, since it serves
+the freshly built dist/ via `astro preview` to a headless Chromium.
 
-## 👀 Want to learn more?
+## Deploying
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The deploy expects `dist/` (Cloudflare Pages, GitHub Pages, Netlify all work). Make
+sure your CI runs `npm run build:all` rather than just `npm run build` so the
+resume PDFs ship alongside the site.

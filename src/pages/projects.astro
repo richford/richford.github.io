@@ -27,50 +27,78 @@ import ProjectCard from "../components/ProjectCard.astro";
       <div class="group relative rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-slate-700 hover:bg-slate-900 transition-all duration-300">
         <div class="flex flex-col gap-4">
           <h3 class="text-lg font-semibold text-slate-100 group-hover:text-accent transition-colors">
-            ROAR: Rapid Online Assessment of Reading
+            ROAR — Rapid Online Assessment of Reading
           </h3>
+          <p class="text-base text-slate-300 leading-relaxed">
+            The platform I lead at Stanford. Browser-based, scientifically validated reading
+            assessments deployed to 309 districts and 2,708 schools, used by 160,000+ K-12
+            students with 873,000+ assessment sessions to date — built on a research-practice
+            partnership backed by Stanford Accelerator for Learning, Ai2/Allen Institute for AI,
+            and 40+ colleges and universities.
+          </p>
 
-          <div class="grid sm:grid-cols-2 gap-6 text-sm">
+          <div class="grid sm:grid-cols-2 gap-6">
             <div>
-              <h4 class="font-medium text-slate-200 mb-2">The Problem</h4>
-              <p class="text-slate-400">
-                Schools and researchers need reliable, scalable reading assessments that work across
-                diverse devices, networks, and student populations, with strict privacy requirements
-                and measurement validity constraints.
+              <h4 class="text-base font-semibold text-slate-200 mb-2">Strategy &amp; Roadmap</h4>
+              <p class="text-base text-slate-400 leading-relaxed">
+                Translate organizational priorities — session reliability, district onboarding,
+                support efficiency, national growth — into a multi-stage technical roadmap.
+                Partner with Product, research PIs, and district stakeholders on tradeoffs.
+                Steward the technology budget.
               </p>
             </div>
             <div>
-              <h4 class="font-medium text-slate-200 mb-2">What I Own</h4>
-              <p class="text-slate-400">
-                Team of six engineers (and growing), technical roadmap, full-stack architecture,
-                data pipeline design, production reliability, and cross-functional coordination
-                with researchers, educators, and school districts.
+              <h4 class="text-base font-semibold text-slate-200 mb-2">Team &amp; Culture</h4>
+              <p class="text-base text-slate-400 leading-relaxed">
+                Built and lead a cross-functional team of six engineers (and growing). Set the
+                hiring bar, the operating cadence (sprint planning, technical reviews, incident
+                response), and the standards for documentation, testing, and maintainability.
               </p>
             </div>
             <div>
-              <h4 class="font-medium text-slate-200 mb-2">Technical Choices</h4>
-              <ul class="text-slate-400 space-y-1">
-                <li>▸ Web-based assessment delivery (browser-native, no installs)</li>
-                <li>▸ Real-time data pipelines for research analytics</li>
-                <li>▸ FERPA-compliant student data handling</li>
-              </ul>
+              <h4 class="text-base font-semibold text-slate-200 mb-2">AI-Accelerated Engineering</h4>
+              <p class="text-base text-slate-400 leading-relaxed">
+                Deployed AI coding tools, code review, and generative testing across the team's
+                workflow. Established QA, evaluation, and safety practices for AI features
+                shipped to learners and tutors — partnered with Stanford Accelerator for
+                Learning and Ai2 on AI-powered tutor assistance.
+              </p>
             </div>
             <div>
-              <h4 class="font-medium text-slate-200 mb-2">Scale</h4>
-              <ul class="text-slate-400 space-y-1">
-                <li>▸ 309 districts, 2,708 schools rostered</li>
-                <li>▸ 160,000+ users who have completed assessments</li>
-                <li>▸ 873,000+ assessment runs</li>
-              </ul>
+              <h4 class="text-base font-semibold text-slate-200 mb-2">Trust, Safety &amp; Privacy</h4>
+              <p class="text-base text-slate-400 leading-relaxed">
+                Technical owner for data governance on a K-12 platform. Defined
+                system-of-record decisions, retention/deletion practices, least-privilege
+                access controls, vendor security review, and FERPA-aligned controls on
+                student PII.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-base font-semibold text-slate-200 mb-2">Reliability &amp; Foundations</h4>
+              <p class="text-base text-slate-400 leading-relaxed">
+                Established the engineering foundations — monitoring, audit logging, error
+                tracking, CI/CD, environment management, performance optimization — that
+                turned a research codebase into something districts trust for daily use.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-base font-semibold text-slate-200 mb-2">Modernization Program</h4>
+              <p class="text-base text-slate-400 leading-relaxed">
+                Leading a multi-stage platform migration: moving fragile research-era logic
+                into explicit, testable services aligned to the user journey (rostering →
+                assignment → assessment delivery → reporting). De-risking a major data
+                migration while preserving integrity for 800K+ historical runs.
+              </p>
             </div>
           </div>
 
           <div class="flex flex-wrap gap-2 pt-1">
             <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">EdTech</span>
-            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Web Platform</span>
-            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Data Pipelines</span>
-            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Leadership</span>
-            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">FERPA</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Engineering Leadership</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">AI-Accelerated</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Platform Migration</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">FERPA &amp; Youth Safety</span>
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">National Scale</span>
           </div>
           <div class="flex flex-wrap gap-4 pt-2">
             <a

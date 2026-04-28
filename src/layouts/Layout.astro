@@ -10,10 +10,13 @@ const { title, description = "Adam Richie-Halford — Technology leader, builder
 const currentPath = Astro.url.pathname;
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/cv", label: "CV" },
+  { href: "/", label: "Home", match: (p: string) => p === "/" },
+  { href: "/about", label: "About", match: (p: string) => p.startsWith("/about") },
+  { href: "/projects", label: "Projects", match: (p: string) => p.startsWith("/projects") },
+  // The "Resume" link is the front door for the resume/CV pair. The on-page
+  // toggle lets visitors flip between the short resume and the long-form CV,
+  // so the nav item should highlight on either side of that toggle.
+  { href: "/resume/general", label: "Resume", match: (p: string) => p.startsWith("/resume") || p === "/cv" || p.startsWith("/cv") },
 ];
 ---
 
@@ -33,7 +36,10 @@ const navLinks = [
     <title>{title}</title>
   </head>
   <body class="min-h-screen flex flex-col">
-    <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/50">
+    <header
+      data-site-header
+      class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/50"
+    >
       <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="/" class="text-lg font-semibold text-slate-100 hover:text-accent transition-colors">
           ARH
@@ -44,7 +50,7 @@ const navLinks = [
               href={link.href}
               class:list={[
                 "text-sm font-medium transition-colors",
-                currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href))
+                link.match(currentPath)
                   ? "text-accent"
                   : "text-slate-400 hover:text-slate-100",
               ]}
@@ -60,7 +66,7 @@ const navLinks = [
       <slot />
     </main>
 
-    <footer class="border-t border-slate-800/50 py-8">
+    <footer data-site-footer class="border-t border-slate-800/50 py-8">
       <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-sm text-slate-400">
           &copy; {new Date().getFullYear()} Adam Richie-Halford
