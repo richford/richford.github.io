@@ -1,0 +1,262 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ResumeCvToggle from "../../components/ResumeCvToggle.astro";
+import { resumes, resumeBySlug } from "../../data/resumes";
+import type { Resume } from "../../data/resumes";
+import "../../styles/resume-print.css";
+
+export async function getStaticPaths() {
+  return resumes.map((r) => ({ params: { slug: r.slug } }));
+}
+
+const { slug } = Astro.params as { slug: string };
+const resume = resumeBySlug(slug) as Resume;
+
+if (!resume) {
+  return Astro.redirect("/404");
+}
+
+const densityClass = resume.pages === 1 ? "resume--1pg" : "resume--2pg";
+
+const stripProtocol = (url: string) => url.replace(/^https?:\/\/(www\.)?/, "");
+---
+
+<Layout
+  title={`Resume — ${resume.name}`}
+  description={`Resume of ${resume.name}. ${resume.headline}.`}
+>
+  <article class="max-w-4xl mx-auto px-6 py-16 sm:py-20">
+    {/*
+      Listed (public) variants get the full Resume/CV toggle.
+      Unlisted (tailored) variants get a minimal print button so the page
+      reads as a focused, single-purpose document when shared in an
+      application — no exposing of other unlisted variants.
+    */}
+    {!resume.unlisted ? (
+      <ResumeCvToggle active="resume" printButtonId="resume-print-btn" />
+    ) : (
+      <div class="print-hide flex justify-end mb-10">
+        <button
+          id="resume-print-btn"
+          type="button"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-slate-100 text-sm font-medium transition-colors cursor-pointer"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m0 0a48.09 48.09 0 0 1 10.5 0m-10.5 0V5.625c0-.621.504-1.125 1.125-1.125h8.25c.621 0 1.125.504 1.125 1.125v2.034" />
+          </svg>
+          Print / Save PDF
+        </button>
+      </div>
+    )}
+
+    {/*
+      The .resume-page wrapper is what resume-print.css targets via
+      @media print. Tailwind classes here govern the on-screen dark theme.
+    */}
+    <div class:list={["resume-page", densityClass]}>
+      {/* Header */}
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-slate-50 mb-2">
+          {resume.name}
+        </h1>
+        <p class="resume-headline text-base sm:text-lg text-accent mb-5">
+          {resume.headline}
+        </p>
+        <div class="resume-contact flex flex-wrap gap-x-5 gap-y-1 text-sm text-slate-400">
+          <a
+            href={`mailto:${resume.contact.email}`}
+            class="hover:text-accent transition-colors"
+          >
+            {resume.contact.email}
+          </a>
+          {resume.contact.phone && <span>{resume.contact.phone}</span>}
+          <a
+            href={`https://${stripProtocol(resume.contact.web)}`}
+            class="hover:text-accent transition-colors"
+          >
+            {stripProtocol(resume.contact.web)}
+          </a>
+          {resume.contact.linkedin && (
+            <a
+              href={`https://${stripProtocol(resume.contact.linkedin)}`}
+              class="hover:text-accent transition-colors"
+            >
+              {stripProtocol(resume.contact.linkedin)}
+            </a>
+          )}
+          {resume.contact.github && (
+            <a
+              href={`https://${stripProtocol(resume.contact.github)}`}
+              class="hover:text-accent transition-colors"
+            >
+              {stripProtocol(resume.contact.github)}
+            </a>
+          )}
+          {resume.contact.location && <span>{resume.contact.location}</span>}
+        </div>
+      </header>
+
+      {/* Summary */}
+      <section class="mb-10">
+        <p class="resume-summary text-base text-slate-300 leading-relaxed">
+          {resume.summary}
+        </p>
+      </section>
+
+      {/* Experience */}
+      <section class="mb-10">
+        <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6 pb-2 border-b border-slate-800">
+          Experience
+        </h2>
+        <div class="space-y-6">
+          {resume.experience.map((role) => (
+            <div class="role">
+              <div class="role-header flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4 mb-2">
+                <h3 class="text-base font-semibold text-slate-100">
+                  {role.title} —{" "}
+                  <span class="role-org text-slate-300 italic font-normal">
+                    {role.org}
+                  </span>
+                </h3>
+                <span class="role-meta text-sm font-mono text-slate-500 whitespace-nowrap">
+                  {role.years}
+                  {role.location ? ` · ${role.location}` : ""}
+                </span>
+              </div>
+              {role.bullets.length > 0 && (
+                <ul class="space-y-1 text-base text-slate-300 leading-relaxed pl-5 list-disc marker:text-slate-600">
+                  {role.bullets.map((b) => <li>{b}</li>)}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Selected Projects */}
+      {resume.projects && resume.projects.length > 0 && (
+        <section class="mb-10">
+          <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6 pb-2 border-b border-slate-800">
+            Selected Projects
+          </h2>
+          <div class="projects-grid grid sm:grid-cols-2 gap-x-8 gap-y-3">
+            {resume.projects.map((p) => (
+              <div class="project text-base text-slate-300 leading-relaxed">
+                <span class="name font-semibold text-slate-100">{p.name}</span>
+                {" — "}
+                {p.description}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Skills */}
+      {resume.skills && resume.skills.length > 0 && (
+        <section class="skills mb-10">
+          <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6 pb-2 border-b border-slate-800">
+            Skills
+          </h2>
+          <div class="space-y-2">
+            {resume.skills.map((s) => (
+              <div class="row grid grid-cols-[10rem_1fr] gap-3 sm:gap-6 items-baseline text-base text-slate-300 leading-relaxed">
+                <span class="label font-semibold text-slate-200">
+                  {s.category}
+                </span>
+                <span class="value">{s.items}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Education */}
+      <section class="mb-10">
+        <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6 pb-2 border-b border-slate-800">
+          Education
+        </h2>
+        <div class="space-y-3">
+          {resume.education.map((edu) => (
+            <div class="education-entry row grid grid-cols-[1fr_auto] gap-4 items-baseline text-base text-slate-300 leading-relaxed">
+              <div>
+                <strong class="text-slate-100">{edu.degree}</strong>,{" "}
+                {edu.institution}
+                {edu.detail && (
+                  <span class="detail text-slate-400">
+                    {" "}— {edu.detail}
+                  </span>
+                )}
+              </div>
+              <span class="role-meta text-sm font-mono text-slate-500 whitespace-nowrap">
+                {edu.years}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Awards (rendered inline) */}
+      {resume.awards && resume.awards.length > 0 && (
+        <section class="mb-10">
+          <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6 pb-2 border-b border-slate-800">
+            Selected Awards
+          </h2>
+          <div class="awards-grid text-base text-slate-300 leading-relaxed">
+            {resume.awards.map((a, i) => (
+              <span class="award-entry">
+                {i > 0 && <span class="text-slate-600"> · </span>}
+                <strong class="text-slate-100">{a.title}</strong>{" "}
+                <span class="role-meta text-slate-500">— {a.year}</span>
+              </span>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Selected Publications */}
+      {resume.selectedPublications && resume.selectedPublications.length > 0 && (
+        <section class="mb-10">
+          <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6 pb-2 border-b border-slate-800">
+            Selected Publications
+          </h2>
+          <div class="space-y-2 text-sm text-slate-300 leading-relaxed">
+            {resume.selectedPublications.map((p) => (
+              <div class="pub">
+                {p.authors}.{" "}
+                <strong class="text-slate-100">{p.title}</strong>.{" "}
+                <em class="text-slate-400">{p.venue}</em>, {p.year}.
+                {p.doi && (
+                  <>
+                    {" "}
+                    <a
+                      href={`https://doi.org/${p.doi}`}
+                      class="text-accent hover:text-accent-light transition-colors"
+                    >
+                      doi:{p.doi}
+                    </a>
+                  </>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Notes (small grey paragraph at the very bottom) */}
+      {resume.notes && resume.notes.length > 0 && (
+        <section class="notes mt-8 pt-6 border-t border-slate-800/50">
+          {resume.notes.map((n) => (
+            <p class="text-sm text-slate-400 leading-relaxed">{n}</p>
+          ))}
+        </section>
+      )}
+    </div>
+  </article>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+      var btn = document.getElementById("resume-print-btn");
+      if (btn) btn.addEventListener("click", function () { window.print(); });
+    });
+  </script>
+</Layout>

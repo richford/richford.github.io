@@ -1,0 +1,364 @@
+/*
+ * Print stylesheet for tailored resume PDFs.
+ *
+ * Architecture:
+ *   - Screen view: rendered via Tailwind dark-theme classes inside the site
+ *     Layout. The .resume-page wrapper class is just a hook for these print
+ *     rules; Tailwind owns the on-screen presentation.
+ *   - Print view: every rule below kicks in only inside @media print, which
+ *     Playwright triggers via emulateMedia({media: 'print'}) during PDF
+ *     generation. The result is a clean, ATS-safe document — single column,
+ *     system fonts, real text, real headings, no graphics.
+ *
+ * Because Tailwind utility classes can have surprisingly high specificity
+ * (`.space-y-6 > :not([hidden]) ~ :not([hidden])` is 0,3,0), every print
+ * rule that fights a utility uses !important. This is normal practice for
+ * print stylesheets that overlay a utility-CSS framework.
+ */
+
+@page {
+  size: Letter;
+  margin: 0.4in 0.5in;
+}
+
+@media print {
+  /* ---- Strip site chrome and Tailwind layout padding ---- */
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+  header[data-site-header],
+  footer[data-site-footer],
+  .resume-screen-chrome,
+  .print-hide {
+    display: none !important;
+  }
+  main,
+  main > article {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+
+  /* ---- Universal spacing reset for everything inside the resume ----
+     Includes line-height because Tailwind utility classes (text-base,
+     text-sm, text-xs, etc.) set BOTH font-size AND line-height. The
+     specific font-size rules below override font-size but would inherit
+     Tailwind's chunky 1.5rem line-heights without this reset. */
+  .resume-page,
+  .resume-page * {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: #111 !important;
+    line-height: 1.32 !important;
+    font-size: inherit;
+  }
+
+  /* ---- Re-apply print typography (each rule re-asserts !important) ---- */
+  .resume-page {
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial,
+      "Liberation Sans", system-ui, sans-serif !important;
+    font-size: 10pt !important;
+    line-height: 1.32 !important;
+    max-width: 7.5in !important;
+    margin: 0 auto !important;
+  }
+
+  .resume-page h1,
+  .resume-page h2,
+  .resume-page h3 {
+    color: #000 !important;
+    font-weight: 700 !important;
+  }
+
+  .resume-page h1 {
+    font-size: 17pt !important;
+    margin: 0 0 1pt 0 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .resume-page .resume-headline {
+    font-size: 10pt !important;
+    color: #444 !important;
+    margin: 0 0 5pt 0 !important;
+    font-weight: 500 !important;
+  }
+
+  .resume-page .resume-contact {
+    font-size: 9.25pt !important;
+    color: #333 !important;
+    margin: 0 0 8pt 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0 12pt !important;
+  }
+
+  .resume-page .resume-contact a {
+    color: #0a4ec0 !important;
+    text-decoration: none !important;
+  }
+
+  .resume-page .resume-summary {
+    font-size: 9.75pt !important;
+    color: #222 !important;
+    margin: 0 0 9pt 0 !important;
+    text-align: justify !important;
+    hyphens: auto !important;
+  }
+
+  .resume-page h2 {
+    font-size: 10pt !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    border-bottom: 0.6pt solid #999 !important;
+    padding-bottom: 1pt !important;
+    margin: 7pt 0 4pt 0 !important;
+  }
+
+  .resume-page h3 {
+    font-size: 10pt !important;
+    margin: 0 !important;
+  }
+
+  .resume-page .role {
+    margin-bottom: 5.5pt !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .resume-page .role-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    gap: 8pt !important;
+    align-items: baseline !important;
+    margin: 0 !important;
+  }
+
+  .resume-page .role-org {
+    font-size: 10pt !important;
+    color: #444 !important;
+    margin: 0 !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+  }
+
+  .resume-page .role-meta {
+    font-size: 9.5pt !important;
+    color: #555 !important;
+    white-space: nowrap !important;
+    font-variant-numeric: tabular-nums !important;
+  }
+
+  .resume-page ul {
+    list-style: disc !important;
+    margin: 2pt 0 0 0 !important;
+    padding-left: 13pt !important;
+  }
+
+  .resume-page li {
+    font-size: 9.75pt !important;
+    margin: 0 0 1pt 0 !important;
+    break-inside: avoid;
+    color: #111 !important;
+    padding: 0 !important;
+  }
+
+  .resume-page .row {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    gap: 8pt !important;
+    align-items: baseline !important;
+    margin-bottom: 2pt !important;
+  }
+
+  .resume-page .education-entry,
+  .resume-page .award-entry {
+    page-break-inside: avoid;
+  }
+
+  .resume-page .education-entry .detail,
+  .resume-page .award-entry .detail {
+    color: #444 !important;
+    font-size: 9.25pt !important;
+  }
+
+  /* Awards block: render as inline list separated by middle dots. */
+  .resume-page .awards-grid {
+    display: block !important;
+    font-size: 9.5pt !important;
+    line-height: 1.35 !important;
+  }
+
+  .resume-page .awards-grid .award-entry {
+    display: inline !important;
+    break-inside: avoid;
+  }
+
+  /* Skills block */
+  .resume-page .skills .row {
+    margin-bottom: 1.5pt !important;
+    align-items: baseline !important;
+    gap: 6pt !important;
+    grid-template-columns: 8em 1fr !important;
+  }
+
+  .resume-page .skills .label {
+    font-weight: 600 !important;
+    font-size: 9.75pt !important;
+    color: #111 !important;
+  }
+
+  .resume-page .skills .value {
+    font-size: 9.75pt !important;
+    color: #111 !important;
+  }
+
+  .resume-page .pub {
+    font-size: 9.25pt !important;
+    margin-bottom: 2pt !important;
+    break-inside: avoid;
+  }
+
+  .resume-page .pub em {
+    font-style: italic !important;
+  }
+
+  .resume-page .project {
+    margin-bottom: 3pt !important;
+    font-size: 9.5pt !important;
+    break-inside: avoid;
+    color: #111 !important;
+  }
+
+  /* Projects in 2 columns to keep section short. */
+  .resume-page .projects-grid {
+    display: block !important;
+    column-count: 2 !important;
+    column-gap: 18pt !important;
+  }
+
+  .resume-page .project .name {
+    font-weight: 600 !important;
+  }
+
+  .resume-page section {
+    break-inside: auto;
+  }
+
+  .resume-page a {
+    color: #0a4ec0 !important;
+    text-decoration: none !important;
+  }
+
+  /* Section bottom-margin: every section gets a tiny gap. */
+  .resume-page > section,
+  .resume-page > header {
+    margin-bottom: 0 !important;
+  }
+
+  /* ============================================================
+     1-page density — tighter type and spacing.
+     ============================================================ */
+  .resume-page.resume--1pg {
+    font-size: 9.25pt !important;
+    line-height: 1.25 !important;
+  }
+
+  .resume-page.resume--1pg h1 {
+    font-size: 15pt !important;
+  }
+
+  .resume-page.resume--1pg .resume-headline {
+    font-size: 9.25pt !important;
+    margin-bottom: 3pt !important;
+  }
+
+  .resume-page.resume--1pg .resume-contact {
+    font-size: 8.5pt !important;
+    margin-bottom: 5pt !important;
+  }
+
+  .resume-page.resume--1pg .resume-summary {
+    font-size: 9pt !important;
+    margin-bottom: 6pt !important;
+  }
+
+  .resume-page.resume--1pg h2 {
+    font-size: 9.25pt !important;
+    margin: 5pt 0 3pt 0 !important;
+    padding-bottom: 0.5pt !important;
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  .resume-page.resume--1pg .role {
+    margin-bottom: 3pt !important;
+  }
+
+  .resume-page.resume--1pg li {
+    font-size: 9pt !important;
+    margin-bottom: 0.25pt !important;
+  }
+
+  .resume-page.resume--1pg ul {
+    margin-top: 1pt !important;
+    padding-left: 11pt !important;
+  }
+
+  .resume-page.resume--1pg .row {
+    margin-bottom: 1pt !important;
+  }
+
+  .resume-page.resume--1pg .skills .row {
+    grid-template-columns: 6em 1fr !important;
+    margin-bottom: 0.5pt !important;
+  }
+
+  .resume-page.resume--1pg .skills .label,
+  .resume-page.resume--1pg .skills .value {
+    font-size: 9pt !important;
+  }
+
+  .resume-page.resume--1pg .education-entry .detail {
+    display: none !important;
+  }
+
+  /* On the 1-page variant, compact education into a single line. */
+  .resume-page.resume--1pg .education-entry {
+    display: inline !important;
+  }
+  .resume-page.resume--1pg .education-entry .role-meta {
+    display: inline !important;
+    margin-left: 4pt !important;
+    color: #666 !important;
+  }
+  .resume-page.resume--1pg .education-entry + .education-entry::before {
+    content: " · ";
+    color: #888;
+  }
+  .resume-page.resume--1pg .education-entry > div {
+    display: inline !important;
+  }
+  .resume-page.resume--1pg section:has(.education-entry) {
+    font-size: 9pt !important;
+    line-height: 1.3 !important;
+  }
+  .resume-page.resume--1pg section {
+    break-inside: avoid;
+  }
+
+  /* Notes section: small grey paragraph at the very bottom, no header. */
+  .resume-page section.notes {
+    margin-top: 4pt !important;
+    font-size: 9pt !important;
+    color: #555 !important;
+  }
+  .resume-page section.notes p {
+    margin: 0 0 2pt 0 !important;
+    color: #555 !important;
+  }
+}
