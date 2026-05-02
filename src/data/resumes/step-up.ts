@@ -35,7 +35,7 @@ export const stepUpResume: Resume = {
   },
 
   summary:
-    "Mission-driven engineering leader who ships software for kids on small, scrappy teams. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering org from scratch and grew the platform to 309 K-12 school districts and 870K+ assessment runs — still in the code on the critical path. Ten+ years shipping production software, from open-source libraries used by labs worldwide (Nature Methods, SciPy, JOSS) to a K-12 classroom platform with FERPA-grade data handling. I treat AI as a force multiplier across the engineering lifecycle — coding agents, generative testing, AI code review — and have shipped AI features in production with the QA, evaluation, and safety bar that working with children demands.",
+    "Mission-driven engineering leader who ships software for kids on small, scrappy teams. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering org from scratch and grew the platform to 309 K-12 school districts and 870K+ assessment runs — still in the code on the critical path. Ten+ years shipping production software, from open-source libraries used by labs worldwide (Nature Methods, SciPy, JOSS) to a K-12 classroom platform with FERPA-grade data handling and validated psychometric assessments. I treat AI as a force multiplier across the engineering lifecycle — coding agents, AI code review, and generative testing on the highest-risk paths — and care deeply about the safety, evaluation, and integrity bar required when the users are children.",
 
   experience: [
     {
@@ -47,7 +47,8 @@ export const stepUpResume: Resume = {
       bullets: [
         "Built the engineering org from one to six and scaled ROAR from a research prototype to a platform serving 309 K-12 districts, 2,708 schools, and 160K+ students with 873K+ assessment runs — operating on a nonprofit-research budget against a continually growing district roster.",
         "Stay hands-on on the critical path: still ship code, drive incidents, and pair with engineers on hard problems while owning roadmap, hiring, and operating cadence (sprint planning, technical reviews, release, delivery reporting).",
-        "Rolled out AI-accelerated engineering across the team — Claude Code, Cursor, and Copilot for development, AI code review on every PR, generative tests for our highest-risk paths — and built the eval/QA/safety harness for the AI-powered tutor and learner features we ship in partnership with Stanford Accelerator for Learning and Ai2/Allen Institute for AI.",
+        "Pioneered AI-accelerated engineering on the team — coding agents (Claude Code), AI code review on every PR, generative tests on the highest-risk paths — backed by a ~70-page domain-knowledge document that grounds every AI-assisted change. The discipline that determines whether AI accelerates a small team or distracts it.",
+        "Inside the product itself, the focus is psychometric integrity: shipping validated reading assessments grounded in modern measurement theory (computerized adaptive testing, latent-ability models, IRT item banks). Validation work in partnership with Stanford's Accelerator for Learning, with results published in peer-reviewed journals.",
         "Technical owner for data governance, privacy, and user safety on a K-12 platform: system-of-record decisions, retention/deletion, least-privilege access, vendor security review, and FERPA-aligned controls on student PII for a platform serving children.",
         "Stood up the engineering foundations — monitoring, audit logging, error tracking, CI/CD, environment management, on-call — that turned a research codebase into something districts trust for daily classroom use; reliability moved from best-effort to a platform schools schedule around.",
         "Leading a multi-stage platform modernization onto a TypeScript Vue front-end, Express services, and Postgres with FGA-based authorization — moving fragile research-era logic into explicit, testable services aligned to the user journey (rostering → assignment → assessment delivery → reporting) and de-risking the migration of 800K+ historical assessment runs without a single integrity incident.",
@@ -119,7 +120,7 @@ export const stepUpResume: Resume = {
     {
       name: "ROAR — Rapid Online Assessment of Reading",
       description:
-        "Platform I lead at Stanford. Browser-based, validated reading assessments deployed in 309 K-12 districts with 870K+ runs and FERPA-grade data handling. Research–practice partnership backed by Stanford Accelerator for Learning and Ai2.",
+        "Platform I lead at Stanford. Browser-based, validated reading assessments deployed in 309 K-12 districts with 870K+ runs and FERPA-grade data handling. Housed in the Stanford Graduate School of Education, with research partnership with the Accelerator for Learning and validation work in peer-reviewed journals.",
       links: [{ label: "roar.stanford.edu", href: "https://roar.stanford.edu/" }],
     },
     {

@@ -31,7 +31,7 @@ export const generalResume: Resume = {
   },
 
   summary:
-    "Engineering leader who runs the team and the platform behind ROAR at Stanford — a research-grade reading-assessment system used by 309 K-12 school districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs. I build the architecture, the engineering practice, and the data and safety controls that turn peer-reviewed science into software districts can rely on. Hands-on builder (Nature Methods, SciPy, JOSS) who treats AI as a force multiplier across the engineering lifecycle and ships AI features in production with the QA, evaluation, and safety bar that working in K-12 demands.",
+    "Engineering leader who runs the team and the platform behind ROAR at Stanford — an open-source K-12 reading-assessment system used by 309 school districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs. I build the architecture, the engineering practice, and the data and safety controls that turn peer-reviewed measurement science into software districts can rely on. Hands-on builder (Nature Methods, SciPy, JOSS) who treats AI as a force multiplier across the engineering lifecycle — coding agents, AI code review, generative testing — and cares about the safety, evaluation, and psychometric-integrity bar required when the users are children.",
 
   experience: [
     {
@@ -43,7 +43,8 @@ export const generalResume: Resume = {
       bullets: [
         "Built the engineering org from one to six and scaled ROAR from a research prototype to a platform serving 309 K-12 districts, 2,708 schools, and 160K+ students with 873K+ assessment runs to date.",
         "Stay hands-on on the critical path: ship code, drive incidents, and pair with engineers on hard problems while owning roadmap, hiring, and operating cadence (sprint planning, technical reviews, release, delivery reporting).",
-        "Rolled out AI-accelerated engineering across the team — coding agents (Claude Code, Cursor, Copilot), AI code review on every PR, generative tests on highest-risk paths — and built the eval/QA/safety harness for AI-powered tutor and learner features shipped in partnership with Stanford Accelerator for Learning and Ai2/Allen Institute for AI.",
+        "Pioneered AI-accelerated engineering on the team — coding agents (Claude Code), AI code review on every PR, generative tests on highest-risk paths — backed by a ~70-page domain-knowledge document that grounds every AI-assisted change.",
+        "Inside the product itself, the focus is psychometric integrity: shipping validated reading assessments grounded in modern measurement theory (computerized adaptive testing, latent-ability models, IRT item banks). Validation work in partnership with Stanford's Accelerator for Learning, with results published in peer-reviewed journals.",
         "Technical owner for data governance, privacy, and user safety on a K-12 platform: system-of-record decisions, retention/deletion, least-privilege access, vendor security review, and FERPA-aligned controls on student PII.",
         "Stood up the engineering foundations — monitoring, audit logging, error tracking, CI/CD, environment management, on-call — that turned a research codebase into something districts trust for daily classroom use.",
         "Leading a multi-stage platform modernization onto a TypeScript Vue front-end, Express services, and Postgres with FGA-based authorization — moving fragile research-era logic into explicit, testable services aligned to the user journey (rostering → assignment → assessment delivery → reporting) and de-risking the migration of 800K+ historical assessment runs without a single integrity incident.",
@@ -115,7 +116,7 @@ export const generalResume: Resume = {
     {
       name: "ROAR — Rapid Online Assessment of Reading",
       description:
-        "Platform I lead at Stanford. Browser-based, validated assessments for K-12 reading skills deployed in 309 districts with 870K+ runs and FERPA-grade data handling. Research–practice partnership with Stanford Accelerator for Learning and Ai2.",
+        "Platform I lead at Stanford. Browser-based, validated assessments for K-12 reading skills deployed in 309 districts with 870K+ runs and FERPA-grade data handling. Housed in the Stanford Graduate School of Education, with research partnership with the Accelerator for Learning and validation work in peer-reviewed journals.",
     },
     {
       name: "pyAFQ — Automated Fiber Quantification",

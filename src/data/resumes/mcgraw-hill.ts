@@ -34,7 +34,7 @@ export const mcgrawHillResume: Resume = {
   },
 
   summary:
-    "Engineering leader who turns research-grade software into K-12 platforms that school districts adopt at scale. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering organization and grew the platform to 309 K-12 districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs — owning architecture, data governance, FERPA-grade student-data handling, and AI strategy. Hands-on builder (Nature Methods, SciPy, JOSS) with a track record of operationalizing peer-reviewed science; the work I lead is built on partnerships with Stanford Accelerator for Learning and Ai2/Allen Institute for AI.",
+    "Engineering leader who turns research-grade software into K-12 platforms that school districts adopt at scale. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering organization and grew the platform to 309 K-12 districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs — owning architecture, data governance, FERPA-grade student-data handling, and the team's AI engineering practice. Hands-on builder (Nature Methods, SciPy, JOSS) with a track record of operationalizing peer-reviewed measurement science. ROAR is housed in the Stanford Graduate School of Education, with research partnership with the Accelerator for Learning and validation work published in peer-reviewed journals.",
 
   experience: [
     {
@@ -47,7 +47,8 @@ export const mcgrawHillResume: Resume = {
         "Own engineering strategy, architecture, and execution for ROAR — a research-grade reading-assessment platform deployed in 309 K-12 districts and 2,708 schools, with 873K+ assessment runs to date and 25+ active district partnerships.",
         "Built and lead a cross-functional team of six engineers; defined the hiring bar, the engineering operating cadence, and the standards for code review, release, and incident response that turn research code into a platform districts can rely on.",
         "Lead a multi-stage platform modernization and data-migration program — onto a TypeScript Vue front-end, Express services, and Postgres with FGA-based authorization — moving fragile research-era logic into explicit, testable services aligned to the user journey (rostering → assignment → assessment delivery → reporting) and preserving integrity for 800K+ historical runs.",
-        "Defined the AI strategy for the platform — both as a product surface (AI-powered tutor and learner features built in partnership with Stanford Accelerator for Learning and Ai2) and as engineering practice (coding agents, AI code review, generative testing, evaluation harnesses). Established QA, evaluation, and safety standards for AI features in a K-12 context.",
+        "Defined the engineering practice around AI — coding agents (Claude Code), AI code review on every PR, generative tests on highest-risk paths, backed by a ~70-page domain-knowledge document that grounds every AI-assisted change.",
+        "Inside the product itself, the focus is psychometric integrity: shipping validated reading assessments grounded in modern measurement theory (computerized adaptive testing, latent-ability models, IRT item banks). Validation work in partnership with Stanford's Accelerator for Learning, with results published in peer-reviewed journals.",
         "Technical owner for data governance, privacy, and student safety: system-of-record decisions, retention and deletion practices, least-privilege access, vendor security review, and FERPA-aligned controls on student PII.",
         "Stood up the engineering foundations — monitoring, audit logging, error tracking, CI/CD, environment management, on-call — and instituted release and reliability practices that took ROAR from research-cadence to production-cadence delivery.",
         "Steward the technology budget; manage vendor and contractor relationships; partner with Product, research PIs, district stakeholders, and 40+ college and university collaborators to translate organizational priorities into delivery.",
@@ -118,7 +119,7 @@ export const mcgrawHillResume: Resume = {
     {
       name: "ROAR — Rapid Online Assessment of Reading",
       description:
-        "Platform I lead at Stanford. Browser-based, validated assessments for K-12 reading skills deployed in 309 districts with 870K+ runs and FERPA-grade data handling. Research–practice partnership with Stanford Accelerator for Learning and Ai2.",
+        "Platform I lead at Stanford. Browser-based, validated assessments for K-12 reading skills deployed in 309 districts with 870K+ runs and FERPA-grade data handling. Housed in the Stanford Graduate School of Education, with research partnership with the Accelerator for Learning and validation work in peer-reviewed journals.",
     },
     {
       name: "pyAFQ — Automated Fiber Quantification",
@@ -171,9 +172,14 @@ export const mcgrawHillResume: Resume = {
         "Hiring & team building, technical roadmap, sprint operations, incident response, vendor management, cross-functional partnership with Product, Research, and district stakeholders",
     },
     {
-      category: "AI Strategy & Practice",
+      category: "AI Engineering Practice",
       items:
-        "AI as engineering practice (coding agents, AI code review, generative testing) and as product surface (LLM features in production with eval, QA, and safety harnesses); responsible AI in K-12 contexts",
+        "Coding agents (Claude Code), AI code review on every PR, generative testing on highest-risk paths, domain-knowledge documentation as scaffolding, evaluation harnesses, prompt-engineering for production systems, AI safety/QA in K-12 contexts",
+    },
+    {
+      category: "Psychometrics & Measurement",
+      items:
+        "Item-response theory (IRT), computerized adaptive testing (CAT), latent-ability models, validation studies in partnership with Stanford's Accelerator for Learning",
     },
     {
       category: "Platforms & Infrastructure",

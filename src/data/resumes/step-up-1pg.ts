@@ -35,10 +35,10 @@ export const stepUpResume1Page: Resume = {
 
   // Tighter summary tuned for 1-page density.
   summary:
-    "Mission-driven engineering leader who ships software for kids on small, scrappy teams. Director of Technology & Innovation for ROAR at Stanford — built the engineering org and grew the platform to 309 districts and 870K+ assessment runs while staying in the code on the critical path. AI-native (Claude Code, Cursor, Copilot in the workflow; AI features shipped in production with eval/safety harnesses). 10+ years shipping production software, including open-source libraries used by labs worldwide (Nature Methods, SciPy, JOSS).",
+    "Mission-driven engineering leader who ships software for kids on small, scrappy teams. Director of Technology & Innovation for ROAR at Stanford — built the engineering org and grew the platform to 309 districts and 870K+ assessment runs while staying in the code on the critical path. AI-native engineering practice (Claude Code, AI code review, generative testing, ~70-page domain-knowledge document grounding every change). The product itself is grounded in modern measurement science. 10+ years shipping production software, including open-source libraries used by labs worldwide (Nature Methods, SciPy, JOSS).",
 
   experience: [
-    // Current role: 3 strongest bullets (leadership, AI, modernization).
+    // Current role: 3 strongest bullets (org-building, hands-on, AI engineering).
     pickRole("stanford-roar-director", [0, 1, 2]),
     pickRole("stanford-roar-postdoc", [0]),
     pickRole("uw-data-science-postdoc", [0]),
