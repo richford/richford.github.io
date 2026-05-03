@@ -14,13 +14,11 @@
 import type { Resume } from "./types";
 import { generalResume } from "./general";
 import { stepUpResume } from "./step-up";
-import { stepUpResume1Page } from "./step-up-1pg";
 import { mcgrawHillResume } from "./mcgraw-hill";
 
 export const resumes: Resume[] = [
   generalResume,
   stepUpResume,
-  stepUpResume1Page,
   mcgrawHillResume,
 ];
 

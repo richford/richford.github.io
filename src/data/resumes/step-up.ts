@@ -35,7 +35,7 @@ export const stepUpResume: Resume = {
   },
 
   summary:
-    "Mission-driven engineering leader who ships software for kids on small, scrappy teams. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering org from scratch and grew the platform to 309 K-12 school districts and 870K+ assessment runs — still in the code on the critical path. Ten+ years shipping production software, from open-source libraries used by labs worldwide (Nature Methods, SciPy, JOSS) to a K-12 classroom platform with FERPA-grade data handling and validated psychometric assessments. I treat AI as a force multiplier across the engineering lifecycle — coding agents, AI code review, and generative testing on the highest-risk paths — and care deeply about the safety, evaluation, and integrity bar required when the users are children.",
+    "Mission-driven engineering leader who builds software for kids and the adults in their corner. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering organization from scratch and grew the platform to 309 K-12 school districts and 870K+ assessment runs. I lead a lean team that delivers like one many times its size, and I still write code on the things that matter most. Ten+ years shipping production software, from open-source libraries used by labs worldwide (Nature Methods, SciPy, JOSS) to a K-12 classroom platform with FERPA-grade data handling and validated psychometric assessments. I treat AI as a force multiplier across the engineering lifecycle — coding agents, AI code review, and generative testing on the highest-risk paths — and care deeply about the safety, evaluation, and integrity bar required when the users are children.",
 
   experience: [
     {

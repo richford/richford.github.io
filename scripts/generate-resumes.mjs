@@ -35,7 +35,6 @@ async function loadResumes() {
   return [
     { slug: "general", pdfBasename: "Adam-Richie-Halford-Resume" },
     { slug: "step-up", pdfBasename: "Adam-Richie-Halford-StepUp" },
-    { slug: "step-up-1pg", pdfBasename: "Adam-Richie-Halford-StepUp-1pg" },
     { slug: "mcgraw-hill", pdfBasename: "Adam-Richie-Halford-McGrawHill" },
   ];
 }

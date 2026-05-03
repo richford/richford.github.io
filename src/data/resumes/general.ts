@@ -31,7 +31,7 @@ export const generalResume: Resume = {
   },
 
   summary:
-    "Engineering leader who runs the team and the platform behind ROAR at Stanford — an open-source K-12 reading-assessment system used by 309 school districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs. I build the architecture, the engineering practice, and the data and safety controls that turn peer-reviewed measurement science into software districts can rely on. Hands-on builder (Nature Methods, SciPy, JOSS) who treats AI as a force multiplier across the engineering lifecycle — coding agents, AI code review, generative testing — and cares about the safety, evaluation, and psychometric-integrity bar required when the users are children.",
+    "Mission-driven engineering leader who builds software for kids and the adults in their corner. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering organization from scratch and grew an open-source K-12 reading-assessment platform to 309 school districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs. I lead a lean team that delivers like one many times its size, and I still write code on the things that matter most. Hands-on builder (Nature Methods, SciPy, JOSS) who treats AI as a force multiplier across the engineering lifecycle — coding agents, AI code review, generative testing — and cares about the safety, evaluation, and psychometric-integrity bar required when the users are children.",
 
   experience: [
     {
