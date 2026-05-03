@@ -1,0 +1,347 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+/**
+ * Project deep-dive page for ROAR.
+ *
+ * Doubles as:
+ *   1. The canonical "what I lead at Stanford" landing for site visitors who
+ *      want depth on a specific project.
+ *   2. The portfolio link submitted on job applications.
+ *
+ * Audience-agnostic on purpose. No specific recruiter or company is named.
+ * Works whether the visitor is a hiring manager, a colleague, a partner, or
+ * a curious stranger who clicked a link from LinkedIn.
+ *
+ * URL pattern: /roar (and future siblings like /pyafq, /cloudknot, /groupyr
+ * for project deep-dives).
+ */
+---
+
+<Layout
+  title="ROAR — Adam Richie-Halford"
+  description="ROAR is the open-source K-12 reading-assessment platform I lead engineering for at Stanford. Curated portfolio with videos, live demos, and engineering context."
+>
+  <article class="max-w-4xl mx-auto px-6 py-16 sm:py-20">
+    <header class="mb-10">
+      <p class="text-sm font-mono text-accent mb-3 tracking-wide uppercase">
+        Project · ROAR
+      </p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-50 mb-4">
+        ROAR — what I lead at Stanford
+      </h1>
+      <p class="text-lg text-slate-300 leading-relaxed">
+        A curated walkthrough of the platform itself and the engineering work
+        behind it: videos, live demos, and the parts I personally own.
+      </p>
+    </header>
+
+    {/* What ROAR is. */}
+    <section class="mb-12">
+      <h2
+        class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-4 pb-2 border-b border-slate-800"
+      >
+        About ROAR
+      </h2>
+      <div class="space-y-4 text-base text-slate-300 leading-relaxed">
+        <p>
+          ROAR is an academically-licensed platform for the assessment of
+          foundational reading skills, developed by the Stanford Reading &amp;
+          Dyslexia Research Program. It is browser-based, free to schools,
+          available in English and Spanish, and integrated with Clever and
+          ClassLink for single sign-on. Currently deployed in 309 K-12 school
+          districts and 2,700+ schools, with 873K+ assessment runs to date.
+        </p>
+        <p>
+          The Foundational Literacy suite — letter knowledge, phonological
+          awareness, single word recognition, and sentence reading efficiency —
+          fits inside a thirty-minute literacy block per student. Beyond that,
+          we have a ROAR-Comp suite for reading comprehension, a ROAM suite for
+          math, and assessments for visual attention and executive functioning.
+          Score reports return same-day, broken down by skill area and
+          color-coded by support level.
+        </p>
+      </div>
+    </section>
+
+    {/* Curated public materials. */}
+    <section class="mb-12">
+      <h2
+        class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6 pb-2 border-b border-slate-800"
+      >
+        See ROAR in action
+      </h2>
+
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-base font-semibold text-slate-100 mb-2">
+            Try the assessments yourself
+          </h3>
+          <p class="text-base text-slate-300 leading-relaxed">
+            Live demos of individual ROAR assessments. Free, no signup —{" "}
+            <a
+              href="https://roar.stanford.edu/#demo"
+              class="text-accent hover:text-accent-light transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              roar.stanford.edu/#demo
+            </a>
+            . This is the most direct way to feel what a student feels.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-base font-semibold text-slate-100 mb-2">
+            How students experience ROAR
+          </h3>
+          <ul
+            class="space-y-2 text-base text-slate-300 leading-relaxed pl-5 list-disc marker:text-slate-600"
+          >
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=XLLxKBJEeGc"
+                class="text-accent hover:text-accent-light transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Guide to the Student Dashboard
+              </a>: what a student sees on log in and during an assessment.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base font-semibold text-slate-100 mb-2">
+            How educators use it
+          </h3>
+          <ul
+            class="space-y-2 text-base text-slate-300 leading-relaxed pl-5 list-disc marker:text-slate-600"
+          >
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=zyDjHcUUUH8"
+                class="text-accent hover:text-accent-light transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Guide to Logging In to Your Educator Account
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=n8v6Cy6G7Tg"
+                class="text-accent hover:text-accent-light transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Guide to the Group Score Report
+              </a>: navigating classroom-, grade-, or district-level results.
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=H1ALVWd4GLo"
+                class="text-accent hover:text-accent-light transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Guide to the Individual Score Report
+              </a>: interpreting one student's result and the recommended next
+              steps.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-base font-semibold text-slate-100 mb-2">
+            The bigger picture
+          </h3>
+          <ul
+            class="space-y-2 text-base text-slate-300 leading-relaxed pl-5 list-disc marker:text-slate-600"
+          >
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=mTyRmyBRHS0"
+                class="text-accent hover:text-accent-light transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Introduction to ROAR
+              </a>: the overview if you want one video to watch.
+            </li>
+            <li>
+              <a
+                href="https://youtu.be/cMAYb_E1qiI"
+                class="text-accent hover:text-accent-light transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ROAR in Schools
+              </a>: how districts and teachers actually use it day to day.
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=uFk5GjE2ziQ"
+                class="text-accent hover:text-accent-light transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ROAR: Breaking Barriers for Older Struggling Readers
+              </a>: a specific use case for older students.
+            </li>
+          </ul>
+        </div>
+
+        <p class="text-sm text-slate-400 pt-2">
+          More on the platform and the underlying research at{" "}
+          <a
+            href="https://roar.stanford.edu"
+            class="text-accent hover:text-accent-light transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            roar.stanford.edu
+          </a>
+          ; the dashboard itself lives at{" "}
+          <a
+            href="https://roar.education"
+            class="text-accent hover:text-accent-light transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            roar.education
+          </a>
+          .
+        </p>
+      </div>
+    </section>
+
+    {/* What I personally own. */}
+    <section class="mb-12">
+      <h2
+        class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-4 pb-2 border-b border-slate-800"
+      >
+        What I lead
+      </h2>
+      <ul
+        class="space-y-3 text-base text-slate-300 leading-relaxed pl-5 list-disc marker:text-slate-600"
+      >
+        <li>
+          <strong class="text-slate-100">The engineering organization.</strong>
+          {" "}Built from one engineer to six, plus QA. I set the hiring bar,
+          the operating cadence, and the standards for code review, release, and
+          incident response.
+        </li>
+        <li>
+          <strong class="text-slate-100">Platform modernization.</strong>
+          {" "}Leading the backend migration from Firestore to
+          PostgreSQL/CloudSQL — data model redesign, schema work, staged rollout
+          against active production traffic. Moving fragile research-era logic
+          into explicit, testable services.
+        </li>
+        <li>
+          <strong class="text-slate-100"
+            >Data governance and youth safety.</strong
+          >
+          {" "}Technical owner for FERPA-aligned audit logging and data
+          lifecycle architecture, anchored to SOC 2 readiness. Accessibility
+          (VPAT), least-privilege access, vendor security review, incident
+          response.
+        </li>
+        <li>
+          <strong class="text-slate-100">Reliability foundations.</strong>
+          {" "}The monitoring, error tracking, deployment, and on-call practices
+          that took ROAR from research-cadence software to a platform districts
+          schedule around for daily classroom use.
+        </li>
+        <li>
+          <strong class="text-slate-100">AI-accelerated team practice.</strong>
+          {" "}Coding agents (Claude Code), AI code review on every PR,
+          generative testing on highest-risk paths — backed by a ~70-page
+          domain-knowledge document that grounds every AI-assisted change.
+        </li>
+      </ul>
+      <p class="mt-4 text-sm text-slate-400">
+        More detail on any of these in the{" "}
+        <a
+          href="/resume/general"
+          class="text-accent hover:text-accent-light transition-colors"
+        >
+          short resume
+        </a>
+        {" "}or the{" "}
+        <a
+          href="/cv"
+          class="text-accent hover:text-accent-light transition-colors"
+        >
+          long-form CV
+        </a>
+        .
+      </p>
+    </section>
+
+    {/* Honest framing. */}
+    <section class="mb-12">
+      <h2
+        class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-4 pb-2 border-b border-slate-800"
+      >
+        On what you'd see today
+      </h2>
+      <p class="text-base text-slate-300 leading-relaxed">
+        ROAR is mid-migration on the backend (Firestore → PostgreSQL/CloudSQL),
+        so the production build the videos and demos show is the version we're
+        refactoring, not the version we'd ship today. That gap — the choices we
+        made the first time and the ones we're making now — is the most
+        interesting part of an engineering-leader conversation about ROAR. Happy
+        to walk through it.
+      </p>
+    </section>
+
+    {/* Cross-links. */}
+    <section>
+      <h2
+        class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-4 pb-2 border-b border-slate-800"
+      >
+        More
+      </h2>
+      <ul
+        class="space-y-2 text-base text-slate-300 leading-relaxed pl-5 list-disc marker:text-slate-600"
+      >
+        <li>
+          How I think about engineering more broadly —{" "}
+          <a
+            href="/about"
+            class="text-accent hover:text-accent-light transition-colors"
+          >
+            about me
+          </a>
+        </li>
+        <li>
+          Other projects (pyAFQ, Cloudknot, Groupyr) —{" "}
+          <a
+            href="/projects"
+            class="text-accent hover:text-accent-light transition-colors"
+          >
+            projects
+          </a>
+        </li>
+        <li>
+          Resume —{" "}
+          <a
+            href="/resume/general"
+            class="text-accent hover:text-accent-light transition-colors"
+          >
+            short version
+          </a>
+          {" "}or{" "}
+          <a
+            href="/cv"
+            class="text-accent hover:text-accent-light transition-colors"
+          >
+            long-form CV
+          </a>
+        </li>
+      </ul>
+    </section>
+  </article>
+</Layout>

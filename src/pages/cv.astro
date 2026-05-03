@@ -86,7 +86,25 @@ function highlightName(authors: string): string {
               <p class="text-slate-100 print:text-black font-medium">
                 {job.title}
               </p>
-              <p class="text-slate-400 print:text-gray-600">{job.org}</p>
+              <p class="text-slate-400 print:text-gray-600">
+                {job.org.includes("ROAR") ? (
+                  job.org.split("ROAR").map((part, i, arr) => (
+                    <>
+                      {i > 0 && (
+                        <a
+                          href="/roar"
+                          class="text-accent hover:text-accent-light transition-colors print:text-gray-600 print:no-underline"
+                        >
+                          ROAR
+                        </a>
+                      )}
+                      {part}
+                    </>
+                  ))
+                ) : (
+                  job.org
+                )}
+              </p>
               {job.bullets && job.bullets.length > 0 && (
                 <ul class="mt-1.5 space-y-1 text-slate-400 print:text-gray-600">
                   {job.bullets.map((bullet) => (

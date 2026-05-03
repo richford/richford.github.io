@@ -24,107 +24,33 @@ import ProjectCard from "../components/ProjectCard.astro";
     </div>
 
     <div class="grid gap-6">
-      <div class="group relative rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-slate-700 hover:bg-slate-900 transition-all duration-300">
-        <div class="flex flex-col gap-4">
+      <a
+        href="/roar"
+        class="group relative rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-accent hover:bg-slate-900 transition-all duration-300 block"
+      >
+        <div class="flex flex-col gap-3">
           <h3 class="text-lg font-semibold text-slate-100 group-hover:text-accent transition-colors">
-            ROAR — Rapid Online Assessment of Reading
+            ROAR - Rapid Online Assessment of Reading
           </h3>
           <p class="text-base text-slate-300 leading-relaxed">
-            The open-source platform I lead at Stanford. Browser-based, scientifically validated
-            reading assessments deployed to 309 districts and 2,708 schools, used by 160,000+ K-12
-            students with 873,000+ assessment sessions to date. Housed in the Stanford Graduate
-            School of Education, with research partnerships across the Stanford Accelerator
-            for Learning and 40+ colleges and universities, and validation work in peer-reviewed
-            journals.
+            An acadmically licensed K-12 reading-assessment platform that I lead engineering for at Stanford.
+            Deployed to 309 districts and 2,700+ schools, serving 160K+ students with 873K+
+            assessment runs. I built the engineering organization, own the platform modernization
+            currently underway (Firestore → PostgreSQL/CloudSQL), and the FERPA-aligned data
+            governance that lets districts trust it for daily classroom use.
           </p>
-
-          <div class="grid sm:grid-cols-2 gap-6">
-            <div>
-              <h4 class="text-base font-semibold text-slate-200 mb-2">Strategy &amp; Roadmap</h4>
-              <p class="text-base text-slate-400 leading-relaxed">
-                Translate organizational priorities — session reliability, district onboarding,
-                support efficiency, national growth — into a multi-stage technical roadmap.
-                Partner with Product, research PIs, and district stakeholders on tradeoffs.
-                Steward the technology budget.
-              </p>
-            </div>
-            <div>
-              <h4 class="text-base font-semibold text-slate-200 mb-2">Team &amp; Culture</h4>
-              <p class="text-base text-slate-400 leading-relaxed">
-                Built and lead a cross-functional team of six engineers (and growing). Set the
-                hiring bar, the operating cadence (sprint planning, technical reviews, incident
-                response), and the standards for documentation, testing, and maintainability.
-              </p>
-            </div>
-            <div>
-              <h4 class="text-base font-semibold text-slate-200 mb-2">AI-Accelerated Engineering</h4>
-              <p class="text-base text-slate-400 leading-relaxed">
-                Deployed coding agents (Claude Code), AI code review on every PR, and generative
-                testing across the team's workflow — backed by a ~70-page domain-knowledge
-                document that grounds every AI-assisted change. The discipline that determines
-                whether AI accelerates a small team or distracts it.
-              </p>
-            </div>
-            <div>
-              <h4 class="text-base font-semibold text-slate-200 mb-2">Psychometric Integrity</h4>
-              <p class="text-base text-slate-400 leading-relaxed">
-                Shipping validated reading assessments grounded in modern measurement theory —
-                computerized adaptive testing, latent-ability models, IRT item banks. Validation
-                work in partnership with Stanford's Accelerator for Learning, with results
-                published in peer-reviewed journals.
-              </p>
-            </div>
-            <div>
-              <h4 class="text-base font-semibold text-slate-200 mb-2">Trust, Safety &amp; Privacy</h4>
-              <p class="text-base text-slate-400 leading-relaxed">
-                Technical owner for data governance on a K-12 platform. Defined
-                system-of-record decisions, retention/deletion practices, least-privilege
-                access controls, vendor security review, and FERPA-aligned controls on
-                student PII.
-              </p>
-            </div>
-            <div>
-              <h4 class="text-base font-semibold text-slate-200 mb-2">Reliability &amp; Foundations</h4>
-              <p class="text-base text-slate-400 leading-relaxed">
-                Established the engineering foundations — monitoring, audit logging, error
-                tracking, CI/CD, environment management, performance optimization — that
-                turned a research codebase into something districts trust for daily use.
-              </p>
-            </div>
-            <div>
-              <h4 class="text-base font-semibold text-slate-200 mb-2">Modernization Program</h4>
-              <p class="text-base text-slate-400 leading-relaxed">
-                Leading a multi-stage platform migration: moving fragile research-era logic
-                into explicit, testable services aligned to the user journey (rostering →
-                assignment → assessment delivery → reporting). De-risking a major data
-                migration while preserving integrity for 800K+ historical runs.
-              </p>
-            </div>
-          </div>
-
           <div class="flex flex-wrap gap-2 pt-1">
             <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">EdTech</span>
             <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Engineering Leadership</span>
-            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">AI-Accelerated</span>
             <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Platform Migration</span>
             <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">FERPA &amp; Youth Safety</span>
             <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">National Scale</span>
           </div>
-          <div class="flex flex-wrap gap-4 pt-2">
-            <a
-              href="https://roar.stanford.edu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-sm font-medium text-accent hover:text-accent-light transition-colors inline-flex items-center gap-1"
-            >
-              Website
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-              </svg>
-            </a>
-          </div>
+          <p class="text-sm font-medium text-accent group-hover:text-accent-light transition-colors mt-1">
+            Deep dive on ROAR — videos, demos, and what I lead →
+          </p>
         </div>
-      </div>
+      </a>
 
       <ProjectCard
         title="pyAFQ: Automated Fiber Quantification"
