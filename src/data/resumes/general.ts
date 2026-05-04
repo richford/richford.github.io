@@ -31,7 +31,7 @@ export const generalResume: Resume = {
   },
 
   summary:
-    "Mission-driven engineering leader who builds software for kids and the adults in their corner. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering organization from scratch and grew an open-source K-12 reading-assessment platform to 309 school districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs. I lead a lean team that delivers like one many times its size, and I still write code on the things that matter most. Hands-on builder (Nature Methods, SciPy, JOSS) who treats AI as a force multiplier across the engineering lifecycle — coding agents, AI code review, generative testing — and cares about the safety, evaluation, and psychometric-integrity bar required when the users are children.",
+    "Mission-driven engineering leader who builds software for kids and the adults in their corner. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering organization from scratch and grew an open-source K-12 reading-assessment platform to 309 school districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs. I lead a lean team that delivers like one many times its size, and I still write code on the things that matter most. Hands-on builder (Nature Methods, SciPy, JOSS) who treats AI as a force multiplier across the engineering lifecycle and cares about the safety, evaluation, and psychometric-integrity bar required when the users are children.",
 
   experience: [
     {
@@ -41,14 +41,14 @@ export const generalResume: Resume = {
       org: "Stanford University — ROAR / Graduate School of Education",
       location: "Stanford, CA / Remote",
       bullets: [
-        "Built the engineering org from one to six and scaled ROAR from a research prototype to a platform serving 309 K-12 districts, 2,708 schools, and 160K+ students with 873K+ assessment runs to date.",
-        "Stay hands-on on the critical path: ship code, drive incidents, and pair with engineers on hard problems while owning roadmap, hiring, and operating cadence (sprint planning, technical reviews, release, delivery reporting).",
-        "Pioneered AI-accelerated engineering on the team — coding agents (Claude Code), AI code review on every PR, generative tests on highest-risk paths — backed by a ~70-page domain-knowledge document that grounds every AI-assisted change.",
+        "Built the engineering organization from one to six and scaled ROAR from a research prototype to a platform serving 309 K-12 districts, 2,708 schools, and 160K+ students with 873K+ assessment runs to date.",
+        "Stay hands-on with the codebase while owning roadmap, hiring, and team cadence. Sprint planning, technical reviews, releases, and delivery reporting all sit with me.",
+        "Pioneered AI-accelerated engineering on the team. Coding agents (Claude Code), AI code review on every PR, and generative tests on the code paths where mistakes would matter most. All of it backed by a ~70-page domain-knowledge document that grounds every AI-assisted change.",
         "Inside the product itself, the focus is psychometric integrity: shipping validated reading assessments grounded in modern measurement theory (computerized adaptive testing, latent-ability models, IRT item banks). Validation work in partnership with Stanford's Accelerator for Learning, with results published in peer-reviewed journals.",
-        "Technical owner for data governance, privacy, and user safety on a K-12 platform: system-of-record decisions, retention/deletion, least-privilege access, vendor security review, and FERPA-aligned controls on student PII.",
-        "Stood up the engineering foundations — monitoring, audit logging, error tracking, CI/CD, environment management, on-call — that turned a research codebase into something districts trust for classroom use.",
-        "Leading a multi-stage platform modernization onto a TypeScript Vue front-end, Express services, and Postgres with FGA-based authorization — moving fragile research-era logic into explicit, testable services aligned to the user journey (rostering → assignment → assessment delivery → reporting) and de-risking the migration of 800K+ historical assessment runs without a single integrity incident.",
-        "Run the technology budget and the vendor stack; partner directly with Product, research PIs, and district stakeholders to translate ambiguous organizational priorities into shippable scope.",
+        "Technical owner for data governance, privacy, and user safety on a K-12 platform. System-of-record decisions, retention and deletion, least-privilege access, vendor security review, and FERPA-aligned controls on student PII.",
+        "Stood up the engineering foundations: monitoring, audit logging, error tracking, CI/CD, environment management, on-call. The work that turned a research codebase into something districts trust for classroom use.",
+        "Leading a multi-stage platform modernization onto a TypeScript Vue front-end, Express services, and Postgres with FGA-based authorization. The work moves fragile research-era logic into explicit, testable services aligned to the user journey (rostering → assignment → assessment delivery → reporting). 800K+ historical assessment runs migrated without a single integrity incident.",
+        "Run the technology budget and the vendor stack. Partner directly with Product, research PIs, and district stakeholders to translate ambiguous organizational priorities into shippable scope.",
       ],
     },
     {
@@ -58,7 +58,7 @@ export const generalResume: Resume = {
       org: "Stanford University — Developmental-Behavioral Pediatrics",
       location: "Stanford, CA",
       bullets: [
-        "Built browser-based, validated reading assessments — the engineering foundation of what later became the ROAR platform I now lead. TypeScript front-end, Python data pipelines, hand-tuned for cross-device delivery in real classrooms.",
+        "Built browser-based, validated reading assessments. This was the engineering foundation of what later became the ROAR platform I now lead. TypeScript front-end, Python data pipelines, hand-tuned for cross-device delivery in real classrooms.",
       ],
     },
     {
@@ -68,7 +68,7 @@ export const generalResume: Resume = {
       org: "University of Washington — eScience Institute",
       location: "Seattle, WA",
       bullets: [
-        "Designed APIs, shipped releases, and ran the user community for production-grade open-source software used by labs worldwide — pyAFQ (Nature Methods), Groupyr (JOSS), AFQ-Insight (PLOS Computational Biology), Cloudknot (SciPy 2018). Reviewed external PRs, triaged production-grade issues, and owned the release pipeline.",
+        "Designed APIs, shipped releases, and ran the user community for open-source software used by labs worldwide: pyAFQ (Nature Methods), Groupyr (JOSS), AFQ-Insight (PLOS Computational Biology), Cloudknot (SciPy 2018). Reviewed external PRs, triaged issues, and owned the release pipeline.",
       ],
     },
     {

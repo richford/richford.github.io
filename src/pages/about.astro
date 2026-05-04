@@ -3,7 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import TimelineItem from "../components/TimelineItem.astro";
 ---
 
-<Layout title="About — Adam Richie-Halford" description="Background and experience of Adam Richie-Halford, technology leader at Stanford University.">
+<Layout
+  title="About — Adam Richie-Halford"
+  description="Background and experience of Adam Richie-Halford, technology leader at Stanford University."
+>
   <section class="max-w-5xl mx-auto px-6 py-24 sm:py-32">
     <div class="max-w-3xl">
       <div class="flex items-center gap-6 mb-8">
@@ -15,7 +18,8 @@ import TimelineItem from "../components/TimelineItem.astro";
             width="80"
             height="80"
             loading="eager"
-            class="w-20 h-20 rounded-full object-cover ring-2 ring-slate-800 ring-offset-2 ring-offset-slate-950 flex-shrink-0 scale-110" style="object-position: 30% 20%;"
+            class="w-20 h-20 rounded-full object-cover ring-2 ring-slate-800 ring-offset-2 ring-offset-slate-950 flex-shrink-0 scale-110"
+            style="object-position: 30% 20%;"
           />
         </picture>
         <div>
@@ -28,62 +32,102 @@ import TimelineItem from "../components/TimelineItem.astro";
       <div class="space-y-5 text-slate-300 leading-relaxed">
         <p>
           I lead engineering at
-          <a href="https://ed.stanford.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">Stanford University</a>
+          <a
+            href="https://ed.stanford.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent-light transition-colors"
+            >Stanford University</a
+          >
           for
-          <a href="/roar" class="text-accent hover:text-accent-light transition-colors">ROAR</a> —
-          a K-12 reading-assessment platform now deployed in 309 districts, 2,700+ schools,
-          and used by 160K+ K-12 students. I own the technical strategy, the engineering team, and
-          the data and safety practices that make a research platform something a school district can
-          trust for classroom use. The work spans hiring, roadmap, architecture, vendor
-          and contractor management, FERPA-grade data governance, and budget. The job is to build the
-          backbone for national scale without losing the rigor that makes the assessments worth
-          deploying in the first place.
+          <a
+            href="/roar"
+            class="text-accent hover:text-accent-light transition-colors"
+            >ROAR</a
+          >, a K-12 reading-assessment platform deployed in 309 districts and
+          2,700+ schools, used by 160K+ students. I built the engineering team
+          and own the technical decisions that take ROAR from a research
+          platform to a system districts can trust for classroom use. Hiring,
+          roadmap, architecture, vendor management, FERPA-grade data governance,
+          budget. All of it lives with me.
         </p>
         <p>
-          A focus of mine right now is what AI changes for a small engineering team. I treat AI as a
-          force multiplier across the engineering lifecycle — coding agents, AI code review on every
-          PR, generative testing, and a domain-knowledge documentation layer that grounds every
-          AI-assisted change. Inside the product itself, my focus is psychometric integrity:
-          validated assessments grounded in modern measurement theory — computerized adaptive
-          testing, latent-ability models, IRT item banks — with validation work in partnership with
-          the
-          <a href="https://acceleratelearning.stanford.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">Stanford Accelerator for Learning</a>
-          and results published in peer-reviewed journals. Getting both halves right matters more
-          when your users are children: it's the same set of safety, privacy, and reliability
-          questions, just with the bar set higher.
+          AI is changing what a small engineering team can do. We use coding
+          agents, AI code review on every PR, and generative testing on the code
+          paths where mistakes would matter most. The work that decides whether
+          any of this helps isn't the prompts. It's the documentation
+          underneath: ~70 pages of domain knowledge, project conventions, and
+          review heuristics that ground every AI-assisted change. Inside the
+          product, the focus is psychometric integrity: validated assessments
+          built on modern measurement theory (CAT, latent-ability models, IRT
+          item banks), with validation work done in partnership with the
+          <a
+            href="https://acceleratelearning.stanford.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent-light transition-colors"
+            >Stanford Accelerator for Learning</a
+          >
+          and published in peer-reviewed journals. Both halves of that get harder
+          when the users are children.
         </p>
         <p>
           Before this role I was a postdoc at the
-          <a href="https://escience.washington.edu/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">UW eScience Institute</a>,
-          where I built open-source tools that ended up in real research workflows: pyAFQ (Nature
-          Methods), Cloudknot (SciPy), Groupyr (JOSS), and AFQ-Insight (PLOS Computational Biology).
-          My PhD is in computational physics from the University of Washington, where I ran
+          <a
+            href="https://escience.washington.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent-light transition-colors"
+            >UW eScience Institute</a
+          >, where I built open-source tools that ended up in research
+          workflows: pyAFQ (Nature Methods), Cloudknot (SciPy), Groupyr (JOSS),
+          and AFQ-Insight (PLOS Computational Biology). My PhD is in
+          computational physics from the University of Washington, where I ran
           Monte Carlo simulations on DOE supercomputers as a
-          <a href="https://www.krellinst.org/csgf/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">Computational Science Graduate Fellow</a>.
-          That work produced a Physical Review Letters paper and the kind of habit of correctness
-          you only build when an experimentalist is going to compare your numbers to the universe.
+          <a
+            href="https://www.krellinst.org/csgf/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent-light transition-colors"
+            >Computational Science Graduate Fellow</a
+          >
+          and published in Physical Review Letters.
         </p>
         <p>
           Before grad school I served as a
-          <a href="https://www.peacecorps.gov/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">U.S. Peace Corps</a>
-          health-education volunteer in Morocco, designing federally funded youth programs in rural
-          schools and co-organizing the country's first national English spelling bee. Before that
-          I was a U.S. Air Force officer and systems engineer at the
-          <a href="https://www.losangeles.af.mil/About-Us/Fact-Sheets/Article/343702/space-and-missile-systems-center/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-light transition-colors">Space and Missile Systems Center</a>,
-          where I program-managed an $8M software platform and helped link a $2.4B lab budget to a
-          $12B satellite R&D portfolio. Different problems, same shape: own a complex technical
-          program, get it across the finish line, write the report yourself.
+          <a
+            href="https://www.peacecorps.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent-light transition-colors"
+            >U.S. Peace Corps</a
+          >
+          health-education volunteer in Morocco, designing federally funded youth
+          programs in rural schools and co-organizing the country's first national
+          English spelling bee. Before that I was a U.S. Air Force officer and systems
+          engineer at the
+          <a
+            href="https://www.losangeles.af.mil/About-Us/Fact-Sheets/Article/343702/space-and-missile-systems-center/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent-light transition-colors"
+            >Space and Missile Systems Center</a
+          >, where I program-managed an $8M software platform and helped link a
+          $2.4B lab budget with a $12B satellite R&D portfolio.
         </p>
         <p>
-          The thread through all of it is building things that are rigorous enough for science
-          <em>and</em> practical enough for real-world deployment, on small teams, where every
-          person has to be senior in some direction. That's the only kind of engineering culture
-          I know how to lead.
+          The thread through all of it is an unusual mix: scientific rigor,
+          structured engineering, and the slow work of building community. All
+          three show up in what I lead now.
         </p>
       </div>
 
       <div class="mt-12 pt-10 border-t border-slate-800/50">
-        <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6">What I Own</h2>
+        <h2
+          class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-6"
+        >
+          What I Own
+        </h2>
         <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm text-slate-300">
           <li class="flex items-start gap-2">
             <span class="text-accent mt-0.5">▸</span>
@@ -124,54 +168,69 @@ import TimelineItem from "../components/TimelineItem.astro";
 
   <section class="border-t border-slate-800/50 py-20">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-12">How I Work</h2>
+      <h2
+        class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-12"
+      >
+        How I Work
+      </h2>
       <div class="max-w-3xl space-y-8 text-slate-300 leading-relaxed">
         <div>
-          <h3 class="text-lg font-semibold text-slate-100 mb-2">AI is a force multiplier inside engineering</h3>
+          <h3 class="text-lg font-semibold text-slate-100 mb-2">
+            AI is only as useful as the documentation underneath it
+          </h3>
           <p class="text-base text-slate-300 leading-relaxed">
-            On small teams, AI is the difference between a roadmap that ships and one that
-            slips. I treat coding agents, generative testing, and AI code review as part of
-            the engineering workbench — but the highest-leverage work is the scaffolding
-            around them: domain-knowledge documentation, project conventions, and review
-            heuristics that determine whether AI accelerates the team or distracts it.
-            The bar is higher when the users are kids.
+            On a small team, AI either compounds your output or wastes your
+            time. The work that decides which way it goes isn't the prompts.
+            It's the domain knowledge, conventions, and review heuristics that
+            any engineer or coding agent can learn from before writing a line.
+            We've written ~70 pages of that for our dashboard repo alone.
           </p>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-slate-100 mb-2">80% of the value with 20% of the effort</h3>
+          <h3 class="text-lg font-semibold text-slate-100 mb-2">
+            80% of the value with 20% of the effort
+          </h3>
           <p class="text-base text-slate-300 leading-relaxed">
-            Building for the future isn't the same as over-engineering for the present. I
-            push the team to find the smallest version of the right thing and ship it,
-            then earn the right to iterate. Most of the wins on platforms I've led came
-            from saying no to the tempting overbuild.
+            Building for the future isn't the same as over-engineering for the
+            present. I push the team to find the smallest version of the right
+            thing and ship it, then earn the right to iterate. Most of the wins
+            on the platforms I've led came from saying no to the overbuild.
           </p>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-slate-100 mb-2">Speed and rigor are not opposites</h3>
+          <h3 class="text-lg font-semibold text-slate-100 mb-2">
+            Reliability is the cheapest feature you can ship
+          </h3>
           <p class="text-base text-slate-300 leading-relaxed">
-            Reliability is a feature. Monitoring, audit logs, CI/CD, and a clean incident
-            cadence don't slow a team down — they're how a small team avoids spending its
-            time fighting the same fire twice. The discipline pays for itself inside a
-            single quarter.
+            Monitoring, audit logs, CI/CD, and a clean on-call rotation don't
+            slow a team down. They're how you avoid spending the next quarter
+            fighting the fires you should have caught. The setup work pays back
+            fast.
           </p>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-slate-100 mb-2">Engineering and Product is a partnership</h3>
+          <h3 class="text-lg font-semibold text-slate-100 mb-2">
+            Engineering and Product is a partnership
+          </h3>
           <p class="text-base text-slate-300 leading-relaxed">
-            The healthiest teams I've been part of run on creative tension between an
-            engineering leader who owns <em>how</em> and a product leader who owns
-            <em>what</em> and <em>why</em>. I prefer to be jointly accountable, argue
-            it out in the room, and present a single recommendation to the rest of the
-            org.
+            The teams I've been part of that worked best had clear partnership
+            between an engineering leader and a product leader. The engineering
+            side owns
+            <em>how</em>. Product owns <em>what</em> and <em>why</em>. I prefer
+            to share accountability for both, and work disagreements out before
+            either of us walks into a room of stakeholders.
           </p>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-slate-100 mb-2">Privacy and safety are design constraints, not paperwork</h3>
+          <h3 class="text-lg font-semibold text-slate-100 mb-2">
+            Privacy and safety are design constraints, not paperwork
+          </h3>
           <p class="text-base text-slate-300 leading-relaxed">
-            Working on platforms that serve children sets the floor. Least-privilege
-            access, system-of-record clarity, retention/deletion as code, and vendor
-            review aren't compliance theater — they're the kind of choices that look
-            paranoid right up until the moment they save you.
+            Working on a platform that serves children raises the floor on what
+            safety and privacy mean. Least-privilege access, system-of-record
+            clarity, retention and deletion handled in code, vendor review.
+            These aren't compliance theater. They're how you avoid being the
+            headline.
           </p>
         </div>
       </div>
@@ -180,7 +239,11 @@ import TimelineItem from "../components/TimelineItem.astro";
 
   <section class="border-t border-slate-800/50 py-20">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-12">Timeline</h2>
+      <h2
+        class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-12"
+      >
+        Timeline
+      </h2>
       <div class="max-w-2xl">
         <TimelineItem
           year="2023–present"
@@ -232,5 +295,4 @@ import TimelineItem from "../components/TimelineItem.astro";
       </div>
     </div>
   </section>
-
 </Layout>
