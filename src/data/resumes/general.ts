@@ -1,14 +1,12 @@
 /**
- * General-purpose engineering-leadership resume.
+ * Engineering-leadership resume.
  *
- * Audience-agnostic, 2-page, ATS-friendly. This is the LISTED variant —
- * the one a casual visitor reaches by clicking "Resume" from the site.
- * Tailored variants (step-up, mcgraw-hill) live in their own files and
- * are marked `unlisted: true`.
+ * Audience-agnostic, 2-page, ATS-friendly. This is the single public resume —
+ * the one a visitor reaches by clicking "Resume" from the site, and the one the
+ * /resume/[slug] renderer and PDF build produce.
  *
- * Framing: emphasize Director-level scope, AI-native engineering, ed-tech
- * platforms at scale, open-source, research-to-practice. No mission-specific
- * language — that lives in the tailored variants.
+ * Framing: engineering leadership, AI-native engineering, ed-tech platforms at
+ * scale, open-source, research-to-practice.
  */
 
 import type { Resume } from "./types";
@@ -21,7 +19,7 @@ export const generalResume: Resume = {
 
   name: "Adam Richie-Halford",
   headline:
-    "Engineering Leader · Ed-Tech Platforms at Scale · Director of Technology, Stanford ROAR",
+    "Engineering Leader · Ed-Tech Platforms at Scale · Senior Manager of Engineering, McGraw Hill",
 
   contact: {
     email: "richiehalford@gmail.com",
@@ -31,24 +29,35 @@ export const generalResume: Resume = {
   },
 
   summary:
-    "Mission-driven engineering leader who builds software for kids and the adults in their corner. As Director of Technology & Innovation for ROAR at Stanford, I built the engineering organization from scratch and grew an open-source K-12 reading-assessment platform to 309 school districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs. I lead a lean team that delivers like one many times its size, and I still write code on the things that matter most. Hands-on builder (Nature Methods, SciPy, JOSS) who treats AI as a force multiplier across the engineering lifecycle and cares about the safety, evaluation, and psychometric-integrity bar required when the users are children.",
+    "Mission-driven engineering leader who builds software for kids and the adults in their corner. I'm a Senior Manager of Engineering at McGraw Hill, where I lead the integration of ROAR — the K-12 reading-assessment platform I built and led at Stanford, now licensed by McGraw Hill as a third-party assessment. At Stanford, as Director of Technology & Innovation for ROAR, I built the engineering organization from scratch and grew that open-source platform to 309 school districts, 2,700+ schools, and 160K+ students with 870K+ assessment runs. Hands-on builder (Nature Methods, SciPy, JOSS) who treats AI as a force multiplier across the engineering lifecycle and cares about the safety, evaluation, and psychometric-integrity bar required when the users are children.",
 
   experience: [
     {
+      id: "mcgraw-hill",
+      years: "2026 — Present",
+      title: "Senior Manager of Engineering",
+      org: "McGraw Hill — Insights, Personalization & Assessment",
+      location: "Remote",
+      bullets: [
+        "Lead the engineering integration of ROAR — the K-12 reading-assessment platform I built and led at Stanford — into McGraw Hill's assessment offering, where it is licensed as a third-party assessment.",
+        "Work on assessment engineering more broadly within the Insights, Personalization & Assessment group.",
+      ],
+    },
+    {
       id: "stanford-roar-director",
-      years: "2023 — Present",
+      years: "2023 — 2026",
       title: "Director of Technology & Innovation",
       org: "Stanford University — ROAR / Graduate School of Education",
       location: "Stanford, CA / Remote",
       bullets: [
-        "Built the engineering organization from one to six and scaled ROAR from a research prototype to a platform serving 309 K-12 districts, 2,708 schools, and 160K+ students with 873K+ assessment runs to date.",
-        "Stay hands-on with the codebase while owning roadmap, hiring, and team cadence. Sprint planning, technical reviews, releases, and delivery reporting all sit with me.",
+        "Built the engineering organization from one to six and scaled ROAR from a research prototype to a platform serving 309 K-12 districts, 2,708 schools, and 160K+ students with 873K+ assessment runs.",
+        "Stayed hands-on with the codebase while owning roadmap, hiring, and team cadence. Sprint planning, technical reviews, releases, and delivery reporting all sat with me.",
         "Pioneered AI-accelerated engineering on the team. Coding agents (Claude Code), AI code review on every PR, and generative tests on the code paths where mistakes would matter most. All of it backed by a ~70-page domain-knowledge document that grounds every AI-assisted change.",
-        "Inside the product itself, the focus is psychometric integrity: shipping validated reading assessments grounded in modern measurement theory (computerized adaptive testing, latent-ability models, IRT item banks). Validation work in partnership with Stanford's Accelerator for Learning, with results published in peer-reviewed journals.",
+        "Inside the product itself, the focus was psychometric integrity: shipping validated reading assessments grounded in modern measurement theory (computerized adaptive testing, latent-ability models, IRT item banks). Validation work in partnership with Stanford's Accelerator for Learning, with results published in peer-reviewed journals.",
         "Technical owner for data governance, privacy, and user safety on a K-12 platform. System-of-record decisions, retention and deletion, least-privilege access, vendor security review, and FERPA-aligned controls on student PII.",
         "Stood up the engineering foundations: monitoring, audit logging, error tracking, CI/CD, environment management, on-call. The work that turned a research codebase into something districts trust for classroom use.",
-        "Leading a multi-stage platform modernization onto a TypeScript Vue front-end, Express services, and Postgres with FGA-based authorization. The work moves fragile research-era logic into explicit, testable services aligned to the user journey (rostering → assignment → assessment delivery → reporting). 800K+ historical assessment runs migrated without a single integrity incident.",
-        "Run the technology budget and the vendor stack. Partner directly with Product, research PIs, and district stakeholders to translate ambiguous organizational priorities into shippable scope.",
+        "Led a multi-stage platform modernization onto a TypeScript Vue front-end, Express services, and Postgres with FGA-based authorization. The work moved fragile research-era logic into explicit, testable services aligned to the user journey (rostering → assignment → assessment delivery → reporting). 800K+ historical assessment runs migrated without a single integrity incident.",
+        "Ran the technology budget and the vendor stack. Partnered directly with Product, research PIs, and district stakeholders to translate ambiguous organizational priorities into shippable scope.",
       ],
     },
     {
@@ -58,7 +67,7 @@ export const generalResume: Resume = {
       org: "Stanford University — Developmental-Behavioral Pediatrics",
       location: "Stanford, CA",
       bullets: [
-        "Built browser-based, validated reading assessments. This was the engineering foundation of what later became the ROAR platform I now lead. TypeScript front-end, Python data pipelines, hand-tuned for cross-device delivery in real classrooms.",
+        "Built browser-based, validated reading assessments. This was the engineering foundation of what later became the ROAR platform I went on to lead. TypeScript front-end, Python data pipelines, hand-tuned for cross-device delivery in real classrooms.",
       ],
     },
     {
@@ -116,7 +125,7 @@ export const generalResume: Resume = {
     {
       name: "ROAR — Rapid Online Assessment of Reading",
       description:
-        "Platform I lead at Stanford. Browser-based, validated assessments for K-12 reading skills deployed in 309 districts with 870K+ runs and FERPA-grade data handling. Housed in the Stanford Graduate School of Education, with research partnership with the Accelerator for Learning and validation work in peer-reviewed journals.",
+        "Platform I built and led at Stanford, now licensed by McGraw Hill as a third-party assessment. Browser-based, validated assessments for K-12 reading skills deployed in 309 districts with 870K+ runs and FERPA-grade data handling. Housed in the Stanford Graduate School of Education, with research partnership with the Accelerator for Learning and validation work in peer-reviewed journals.",
     },
     {
       name: "pyAFQ — Automated Fiber Quantification",

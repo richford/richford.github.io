@@ -56,9 +56,9 @@ export interface ResumeAward {
 }
 
 export interface Resume {
-  /** URL slug, e.g. "step-up". */
+  /** URL slug, e.g. "general". */
   slug: string;
-  /** Display name of this variant ("Step Up Tutoring", "General"). */
+  /** Display name of this resume, e.g. "General". */
   variantName: string;
   /** PDF filename (without extension). */
   pdfBasename: string;

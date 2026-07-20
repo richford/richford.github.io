@@ -17,7 +17,11 @@ async function generatePDF() {
     server: { port: PORT, host: "localhost" },
   });
 
-  const browser = await chromium.launch();
+  // Use the full "Chrome for Testing" build in new headless mode rather than the
+  // separate chromium_headless_shell download (which Playwright fetches lazily
+  // and which can hang/fail). `channel: "chromium"` reuses the browser installed
+  // by `npx playwright install chromium`.
+  const browser = await chromium.launch({ channel: "chromium" });
   const page = await browser.newPage();
 
   try {

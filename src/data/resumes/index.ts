@@ -13,13 +13,9 @@
 
 import type { Resume } from "./types";
 import { generalResume } from "./general";
-import { stepUpResume } from "./step-up";
-import { mcgrawHillResume } from "./mcgraw-hill";
 
 export const resumes: Resume[] = [
   generalResume,
-  stepUpResume,
-  mcgrawHillResume,
 ];
 
 /** Resumes that should appear in nav/toggle UI. */

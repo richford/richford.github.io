@@ -25,8 +25,7 @@ src/
 │   ├── cv.ts                  master CV record (long-form, academic-style)
 │   └── resumes/
 │       ├── types.ts           Resume type + factory contract
-│       ├── step-up.ts         2-page Step Up Tutoring tailored variant
-│       ├── step-up-1pg.ts     1-page compressed variant (derives from step-up)
+│       ├── general.ts         the resume (2-page, ATS-friendly)
 │       └── index.ts           registry consumed by /resume/[slug]
 ├── layouts/Layout.astro       site chrome (nav, footer)
 ├── pages/
@@ -46,7 +45,7 @@ scripts/
 
 ## Adding a new tailored resume
 
-1. Create `src/data/resumes/<slug>.ts` exporting a `Resume` (see `step-up.ts` for shape).
+1. Create `src/data/resumes/<slug>.ts` exporting a `Resume` (see `general.ts` for shape).
 2. Register it in `src/data/resumes/index.ts`.
 3. Add the slug + pdfBasename pair to `loadResumes()` in `scripts/generate-resumes.mjs`.
 4. `npm run build && npm run resumes`. The PDF lands in `dist/resumes/<basename>.pdf` and the

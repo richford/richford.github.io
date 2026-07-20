@@ -29,13 +29,9 @@ const PORT = 4174; // a port the existing generate-pdf.mjs doesn't use
 async function loadResumes() {
   // Hard-coded build map — keep in sync with src/data/resumes/index.ts.
   // We avoid importing the TS registry directly because Node doesn't run
-  // TypeScript without a loader; resumes are added so rarely that a manual
-  // entry here is fine. ALL variants get a PDF, including unlisted ones —
-  // unlisted only affects UI surfacing, not whether the PDF is generated.
+  // TypeScript without a loader; a manual entry here is fine.
   return [
     { slug: "general", pdfBasename: "Adam-Richie-Halford-Resume" },
-    { slug: "step-up", pdfBasename: "Adam-Richie-Halford-StepUp" },
-    { slug: "mcgraw-hill", pdfBasename: "Adam-Richie-Halford-McGrawHill" },
   ];
 }
 
@@ -58,7 +54,11 @@ async function generateAll() {
     server: { port: PORT, host: "localhost" },
   });
 
-  const browser = await chromium.launch();
+  // Use the full "Chrome for Testing" build in new headless mode rather than the
+  // separate chromium_headless_shell download (which Playwright fetches lazily
+  // and which can hang/fail). `channel: "chromium"` reuses the browser installed
+  // by `npx playwright install chromium`.
+  const browser = await chromium.launch({ channel: "chromium" });
   const page = await browser.newPage();
 
   try {

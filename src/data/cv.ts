@@ -1,8 +1,8 @@
 export const cv = {
   name: "Adam Richie-Halford",
-  title: "Director of Technology & Innovation",
+  title: "Senior Manager of Engineering, McGraw Hill",
   contact: {
-    emails: ["adamrh@stanford.edu", "richiehalford@gmail.com"],
+    emails: ["Adam.Richie-Halford@mheducation.com", "richiehalford@gmail.com"],
     web: "https://richiehalford.org",
     github: "https://github.com/richford",
     linkedin: "https://www.linkedin.com/in/richiehalford",
@@ -32,13 +32,22 @@ export const cv = {
 
   employment: [
     {
-      years: "2023–present",
+      years: "2026–present",
+      title: "Senior Manager of Engineering",
+      org: "McGraw Hill, Insights, Personalization & Assessment",
+      bullets: [
+        "Lead the engineering integration of ROAR — the K-12 reading-assessment platform I built at Stanford, now licensed by McGraw Hill as a third-party assessment — into McGraw Hill's assessment offering.",
+        "Work more broadly on assessment engineering within the Insights, Personalization & Assessment group.",
+      ],
+    },
+    {
+      years: "2023–2026",
       title: "Director of Technology & Innovation",
       org: "Stanford University, ROAR / Graduate School of Education",
       bullets: [
-        "Lead a cross-functional team of six engineers (and growing) to scale a web-based educational assessment platform to 309 districts, 2,708 schools, 160,000+ users, and 873,000+ assessment runs.",
-        "Define and execute the technical roadmap for the platform, including systems architecture, feature development, and data security enhancements.",
-        "Develop and oversee the technology budget to ensure alignment with strategic priorities.",
+        "Led a cross-functional team of six engineers to scale a web-based educational assessment platform to 309 districts, 2,708 schools, 160,000+ users, and 873,000+ assessment runs.",
+        "Defined and executed the technical roadmap for the platform, including systems architecture, feature development, and data security enhancements.",
+        "Developed and oversaw the technology budget to ensure alignment with strategic priorities.",
         "Consulting data scientist and research software engineer.",
       ],
     },

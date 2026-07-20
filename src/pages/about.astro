@@ -5,7 +5,7 @@ import TimelineItem from "../components/TimelineItem.astro";
 
 <Layout
   title="About — Adam Richie-Halford"
-  description="Background and experience of Adam Richie-Halford, technology leader at Stanford University."
+  description="Background and experience of Adam Richie-Halford, engineering leader at McGraw Hill and founder of the ROAR engineering team at Stanford."
 >
   <section class="max-w-5xl mx-auto px-6 py-24 sm:py-32">
     <div class="max-w-3xl">
@@ -31,34 +31,43 @@ import TimelineItem from "../components/TimelineItem.astro";
       </div>
       <div class="space-y-5 text-slate-300 leading-relaxed">
         <p>
-          I lead engineering at
+          I'm a Senior Manager of Engineering at
+          <a
+            href="https://www.mheducation.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent-light transition-colors"
+            >McGraw Hill</a
+          >, in the Insights, Personalization &amp; Assessment group. My main
+          focus is
+          <a
+            href="/roar"
+            class="text-accent hover:text-accent-light transition-colors"
+            >ROAR</a
+          > — a K-12 reading-assessment platform deployed in 309 districts and
+          2,700+ schools, used by 160K+ students, which McGraw Hill licenses as a
+          third-party assessment and which I now lead the integration of. I built
+          that platform's engineering team at
           <a
             href="https://ed.stanford.edu/"
             target="_blank"
             rel="noopener noreferrer"
             class="text-accent hover:text-accent-light transition-colors"
-            >Stanford University</a
-          >
-          for
-          <a
-            href="/roar"
-            class="text-accent hover:text-accent-light transition-colors"
-            >ROAR</a
-          >, a K-12 reading-assessment platform deployed in 309 districts and
-          2,700+ schools, used by 160K+ students. I built the engineering team
-          and own the technical decisions that take ROAR from a research
-          platform to a system districts can trust for classroom use. Hiring,
+            >Stanford</a
+          >, where I owned the technical decisions that took ROAR from a research
+          platform to a system districts trust for classroom use: hiring,
           roadmap, architecture, vendor management, FERPA-grade data governance,
-          budget. All of it lives with me.
+          budget. All of it lived with me.
         </p>
         <p>
-          AI is changing what a small engineering team can do. We use coding
-          agents, AI code review on every PR, and generative testing on the code
-          paths where mistakes would matter most. The work that decides whether
-          any of this helps isn't the prompts. It's the documentation
-          underneath: ~70 pages of domain knowledge, project conventions, and
-          review heuristics that ground every AI-assisted change. Inside the
-          product, the focus is psychometric integrity: validated assessments
+          AI is changing what a small engineering team can do. Building ROAR, we
+          leaned into it: coding agents, AI code review on every PR, and
+          generative testing on the code paths where mistakes would matter most.
+          The work that decides whether any of this helps isn't the prompts. It's
+          the documentation underneath: ~70 pages of domain knowledge, project
+          conventions, and review heuristics that ground every AI-assisted
+          change. Inside the product, the focus is psychometric integrity:
+          validated assessments
           built on modern measurement theory (CAT, latent-ability models, IRT
           item banks), with validation work done in partnership with the
           <a
@@ -72,7 +81,7 @@ import TimelineItem from "../components/TimelineItem.astro";
           when the users are children.
         </p>
         <p>
-          Before this role I was a postdoc at the
+          Before Stanford I was a postdoc at the
           <a
             href="https://escience.washington.edu/"
             target="_blank"
@@ -135,7 +144,7 @@ import TimelineItem from "../components/TimelineItem.astro";
           </li>
           <li class="flex items-start gap-2">
             <span class="text-accent mt-0.5">▸</span>
-            Hiring, mentorship, and team structure (currently six engineers)
+            Hiring, mentorship, and team structure (built ROAR's team from one to six)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-accent mt-0.5">▸</span>
@@ -246,10 +255,16 @@ import TimelineItem from "../components/TimelineItem.astro";
       </h2>
       <div class="max-w-2xl">
         <TimelineItem
-          year="2023–present"
+          year="2026–present"
+          title="Senior Manager of Engineering"
+          org="McGraw Hill — Insights, Personalization & Assessment"
+          detail="Leading the integration of ROAR as a licensed assessment, and broader assessment engineering."
+        />
+        <TimelineItem
+          year="2023–2026"
           title="Director of Technology & Innovation"
           org="Stanford University — ROAR / Graduate School of Education"
-          detail="Leading technical development of web-based reading assessments and data infrastructure."
+          detail="Built and led the engineering team for a K-12 reading-assessment platform used in 309 districts."
         />
         <TimelineItem
           year="2022–2023"
